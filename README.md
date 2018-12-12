@@ -1,7 +1,7 @@
 Dzumlacek New Generation
 ==============
 This is fork of [SurfStack Wamp](https://github.com/josephspurrier/surfstack-wamp). There is no real code changes, just removing functions which are not necessary :
-- no need to have anything but Apache, MzSQL and PHP
+- no need to have anything but Apache, MySQL and PHP
 
 as the main goal is to provide an easy WAMP stack with Joomla! environment.
 
