@@ -857,7 +857,7 @@ namespace SSWamp
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.msTop;
             this.Name = "MainForm";
-            this.Text = "DzumlacekNG";
+            this.Text = "DzumlacekNG by www.joomlaportal.cz";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainFormFormClosing);
             this.Load += new System.EventHandler(this.MainFormLoad);
             this.Resize += new System.EventHandler(this.MainForm_Resize);

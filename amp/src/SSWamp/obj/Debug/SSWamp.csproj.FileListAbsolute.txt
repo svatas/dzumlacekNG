@@ -7,3 +7,12 @@ C:\Repositories\surfstack-wamp\amp\src\SSWamp\obj\Debug\SSWamp.exe
 C:\Repositories\surfstack-wamp\amp\src\SSWamp\obj\Debug\SSWamp.pdb
 C:\Repositories\surfstack-wamp\amp\src\SSWamp\obj\Debug\SSWamp.csprojAssemblyReference.cache
 C:\Repositories\surfstack-wamp\amp\src\SSWamp\obj\Debug\SSWamp.csproj.CoreCompileInputs.cache
+C:\Repositories\dzumlacekNG\amp\src\SSWamp\bin\Debug\DzumlacekNG.exe
+C:\Repositories\dzumlacekNG\amp\src\SSWamp\bin\Debug\DzumlacekNG.pdb
+C:\Repositories\dzumlacekNG\amp\src\SSWamp\obj\Debug\SSWamp.csprojAssemblyReference.cache
+C:\Repositories\dzumlacekNG\amp\src\SSWamp\obj\Debug\SSWamp.MainForm.resources
+C:\Repositories\dzumlacekNG\amp\src\SSWamp\obj\Debug\SSWamp.FormSettings.resources
+C:\Repositories\dzumlacekNG\amp\src\SSWamp\obj\Debug\SSWamp.csproj.GenerateResource.cache
+C:\Repositories\dzumlacekNG\amp\src\SSWamp\obj\Debug\SSWamp.csproj.CoreCompileInputs.cache
+C:\Repositories\dzumlacekNG\amp\src\SSWamp\obj\Debug\DzumlacekNG.exe
+C:\Repositories\dzumlacekNG\amp\src\SSWamp\obj\Debug\DzumlacekNG.pdb
