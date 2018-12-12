@@ -1,4 +1,4 @@
-SurfStack WAMP
+JoomlaCzech New generation
 ==============
 Welcome! You've stumbled upon one of the quickest ways to get a full HTML and 
 PHP web development environment up and running in seconds on a Windows machine.
