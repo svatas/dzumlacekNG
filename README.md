@@ -1,12 +1,13 @@
 Dzumlacek New Generation
 ==============
-This is fork of [SurfStack Wamp](https://github.com/josephspurrier/surfstack-wamp). There is no real code changes, just removing functions which are not necessary as the main goal is to provide an easy WAMP stack with Joomla! environment.
+This is fork of [SurfStack Wamp](https://github.com/josephspurrier/surfstack-wamp). There is no real code changes, just removing functions which are not necessary :
+- no need to have anything but Apache, MzSQL and PHP
 
-No installation required. Just download, extract, and run SSWamp.exe to gain
-access to the most widely used applications on the web.
+as the main goal is to provide an easy WAMP stack with Joomla! environment.
 
-You deserve a suite of tools that works as efficiently as you do so we've
-designed a rock solid environment for use on your next endeavour.
+No installation required. Just download, extract, and run SSWamp.exe to gain access to the most widely used applications on the web.
+
+You deserve a suite of tools that works as efficiently as you do so we've designed a rock solid environment for use on your next endeavour.
 
 Screenshots are available in the [Wiki](https://github.com/josephspurrier/surfstack-wamp/wiki/SurfStack-WAMP-Screenshots).
 
