@@ -1,6 +1,6 @@
 Dzumlacek New Generation
 ==============
-This is fok of SurfStack Wamp. There is no real code changes, just removing functions which are not necessary as the main goal is to provide an easy WAMP stack with Joomla! environment.
+This is fork of SurfStack Wamp. There is no real code changes, just removing functions which are not necessary as the main goal is to provide an easy WAMP stack with Joomla! environment.
 
 No installation required. Just download, extract, and run SSWamp.exe to gain
 access to the most widely used applications on the web.
