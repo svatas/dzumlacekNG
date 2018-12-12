@@ -16,3 +16,4 @@ C:\Repositories\dzumlacekNG\amp\src\SSWamp\obj\Debug\SSWamp.csproj.GenerateResou
 C:\Repositories\dzumlacekNG\amp\src\SSWamp\obj\Debug\SSWamp.csproj.CoreCompileInputs.cache
 C:\Repositories\dzumlacekNG\amp\src\SSWamp\obj\Debug\DzumlacekNG.exe
 C:\Repositories\dzumlacekNG\amp\src\SSWamp\obj\Debug\DzumlacekNG.pdb
+C:\Repositories\dzumlacekNG\amp\src\SSWamp\obj\Debug\DzumlacekNG.Properties.Resources.resources

@@ -127,8 +127,10 @@ namespace SSWamp
             this.cbMySQL = new System.Windows.Forms.CheckBox();
             this.cMySQL = new System.Windows.Forms.Label();
             this.btnBrowseHTTPS = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.msTop.SuspendLayout();
             this.gbStatus.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // notifyIcon1
@@ -246,7 +248,11 @@ namespace SSWamp
             this.apacheToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.apacheToolStripMenuItem.Text = "Apache";
             this.apacheToolStripMenuItem.Click += new System.EventHandler(this.ApacheToolStripMenuItemClick);
-            
+            // 
+            // nginxToolStripMenuItem
+            // 
+            this.nginxToolStripMenuItem.Name = "nginxToolStripMenuItem";
+            this.nginxToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             // 
             // viewToolStripMenuItem
             // 
@@ -319,7 +325,11 @@ namespace SSWamp
             this.apacheToolStripMenuItem1.Size = new System.Drawing.Size(114, 22);
             this.apacheToolStripMenuItem1.Text = "Apache";
             this.apacheToolStripMenuItem1.Click += new System.EventHandler(this.ApacheToolStripMenuItem1Click);
-            
+            // 
+            // nginxToolStripMenuItem1
+            // 
+            this.nginxToolStripMenuItem1.Name = "nginxToolStripMenuItem1";
+            this.nginxToolStripMenuItem1.Size = new System.Drawing.Size(114, 22);
             // 
             // exploreToolStripMenuItem
             // 
@@ -408,6 +418,11 @@ namespace SSWamp
             this.apacheToolStripMenuItem2.Size = new System.Drawing.Size(114, 22);
             this.apacheToolStripMenuItem2.Text = "Apache";
             this.apacheToolStripMenuItem2.Click += new System.EventHandler(this.ApacheToolStripMenuItem2Click);
+            // 
+            // nginxToolStripMenuItem2
+            // 
+            this.nginxToolStripMenuItem2.Name = "nginxToolStripMenuItem2";
+            this.nginxToolStripMenuItem2.Size = new System.Drawing.Size(114, 22);
             // 
             // cacheToolStripMenuItem
             // 
@@ -790,7 +805,7 @@ namespace SSWamp
             this.gbStatus.Controls.Add(this.cMySQL);
             this.gbStatus.Location = new System.Drawing.Point(12, 27);
             this.gbStatus.Name = "gbStatus";
-            this.gbStatus.Size = new System.Drawing.Size(407, 105);
+            this.gbStatus.Size = new System.Drawing.Size(98, 105);
             this.gbStatus.TabIndex = 7;
             this.gbStatus.TabStop = false;
             this.gbStatus.Text = "Status";
@@ -842,11 +857,21 @@ namespace SSWamp
             this.btnBrowseHTTPS.UseVisualStyleBackColor = true;
             this.btnBrowseHTTPS.Click += new System.EventHandler(this.BtnBrowseHTTPSClick);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(115, 28);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(316, 105);
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(431, 174);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnBrowseHTTPS);
             this.Controls.Add(this.gbStatus);
             this.Controls.Add(this.btnBrowseHTTP);
@@ -865,6 +890,7 @@ namespace SSWamp
             this.msTop.PerformLayout();
             this.gbStatus.ResumeLayout(false);
             this.gbStatus.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -958,5 +984,6 @@ namespace SSWamp
 		private System.Windows.Forms.ToolStripMenuItem phpdbgCommandPromptToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem phalconToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem phalconCommandPromptToolStripMenuItem1;
-	}
+        private System.Windows.Forms.PictureBox pictureBox1;
+    }
 }
