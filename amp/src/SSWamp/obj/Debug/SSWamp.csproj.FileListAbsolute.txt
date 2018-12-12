@@ -1,0 +1,9 @@
+C:\Repositories\surfstack-wamp\amp\src\SSWamp\bin\Debug\SSWamp.exe
+C:\Repositories\surfstack-wamp\amp\src\SSWamp\bin\Debug\SSWamp.pdb
+C:\Repositories\surfstack-wamp\amp\src\SSWamp\obj\Debug\SSWamp.MainForm.resources
+C:\Repositories\surfstack-wamp\amp\src\SSWamp\obj\Debug\SSWamp.FormSettings.resources
+C:\Repositories\surfstack-wamp\amp\src\SSWamp\obj\Debug\SSWamp.csproj.GenerateResource.Cache
+C:\Repositories\surfstack-wamp\amp\src\SSWamp\obj\Debug\SSWamp.exe
+C:\Repositories\surfstack-wamp\amp\src\SSWamp\obj\Debug\SSWamp.pdb
+C:\Repositories\surfstack-wamp\amp\src\SSWamp\obj\Debug\SSWamp.csprojAssemblyReference.cache
+C:\Repositories\surfstack-wamp\amp\src\SSWamp\obj\Debug\SSWamp.csproj.CoreCompileInputs.cache

@@ -217,8 +217,8 @@ namespace SSWamp
 		Variables var;
 		
 		// Strings
-		static string strStart = "Turn On";
-		static string strStop = "Turn Off";
+		static string strStart = "Spustit";
+		static string strStop = "Vypnout";
 		
 		public MainForm()
 		{
@@ -262,7 +262,7 @@ namespace SSWamp
             strRootFolderPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop)+@"\Now\nothing";
             if (!Directory.Exists(strRootFolderPath)) strRootFolderPath = Directory.GetCurrentDirectory();
             
-            versionToolStripMenuItem.Text = "Version: " + System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
+            versionToolStripMenuItem.Text = "Verze: " + System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
             
 			// Modify the status icons
 			GraphicsPath path = new GraphicsPath();
@@ -331,35 +331,9 @@ namespace SSWamp
 				mp.start();
 				listMP.Add(mp);
         	}
-        	if (cbNginx.Checked)
-        	{
-	    		int phpThreads = var.getInt("PHP","numPHPThreads");
-	    		int phpPort = var.getInt("PHP","numPHPPort");
-	    		
-	    		MPNginx mp = new MPNginx();
-	    		mp.attachVar(var);
-	    		mp.attach(getColorLabel(cbNginx));
-	    		
-	    		for (int i = phpPort; i < phpPort  +phpThreads ;i++)
-	    		{
-	    			ManagedProcess map = new ManagedProcess();
-	    			map.attachVar(var);
-	    			map.start(var.strPHPNTSCGIFilePath,"-b 127.0.0.1:" + i, var.strPHPNTSFolderPath, i);
-	    			mp.bind(map);
-	    		}
-				
-				mp.start();
-				listMP.Add(mp);
-        	}
+        	
 
-            if (cbMongoDB.Checked)
-            {
-	            MPMongoDB mp = new MPMongoDB();
-	            mp.attachVar(var);
-				mp.attach(getColorLabel(cbMongoDB));
-				mp.start();
-				listMP.Add(mp);
-            }        	
+            
             if (cbMySQL.Checked)
             {
 	            MPMySQL mp = new MPMySQL();
@@ -369,14 +343,7 @@ namespace SSWamp
 				listMP.Add(mp);
             }
             
-            if (cbMemcached.Checked)
-            {
-	            MPMemcached mp = new MPMemcached();
-	            mp.attachVar(var);
-				mp.attach(getColorLabel(cbMemcached));
-				mp.start();
-				listMP.Add(mp);
-            }
+            
             
             if (listMP.Count>0)
             {
@@ -477,12 +444,12 @@ namespace SSWamp
 			killAll();
 			
 			// Kill the applications without respawning
-			Process.Start("taskkill", "/F /IM nginx.exe");
+			
 			Process.Start("taskkill", "/F /IM httpd.exe");
 			Process.Start("taskkill", "/F /IM php-cgi.exe");
 			Process.Start("taskkill", "/F /IM mysqld.exe");
-			Process.Start("taskkill", "/F /IM mongod.exe");
-			Process.Start("taskkill", "/F /IM memcached.exe");
+			
+			
 		}
 		
 		private void killAll()
@@ -554,20 +521,8 @@ namespace SSWamp
 			simpleOpen(var.strApacheFolderPath);
 		}
 		
-		private void NginxToolStripMenuItemClick(object sender, EventArgs e)
-		{
-			simpleOpen("notepad", var.strNginxTemplateConfigFilePath);
-		}
 		
-		private void NginxToolStripMenuItem1Click(object sender, EventArgs e)
-		{
-			simpleOpen("notepad", var.strNginxConfigFilePath);
-		}
 		
-		private void NginxToolStripMenuItem2Click(object sender, EventArgs e)
-		{
-			simpleOpen(var.strNginxFolderPath);
-		}
 		
 		private void CopyrightToolStripMenuItemClick(object sender, EventArgs e)
 		{
@@ -929,5 +884,10 @@ namespace SSWamp
 			File.WriteAllText(strBatch, strContent);
 			cmdOpen(strBatch);
 		}
-	}
+
+        private void versionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
