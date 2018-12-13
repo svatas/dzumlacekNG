@@ -1,0 +1,758 @@
+2018-12-12 10:19:03 14672 [Note] Plugin 'FEDERATED' is disabled.
+2018-12-12 10:19:03 14672 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2018-12-12 10:19:03 14672 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-12-12 10:19:03 14672 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-12-12 10:19:03 14672 [Note] InnoDB: Memory barrier is not used
+2018-12-12 10:19:03 14672 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-12-12 10:19:03 14672 [Note] InnoDB: Not using CPU crc32 instructions
+2018-12-12 10:19:03 14672 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2018-12-12 10:19:03 14672 [Note] InnoDB: Completed initialization of buffer pool
+2018-12-12 10:19:03 14672 [Note] InnoDB: The first specified data file .\ibdata1 did not exist: a new database to be created!
+2018-12-12 10:19:03 14672 [Note] InnoDB: Setting file .\ibdata1 size to 12 MB
+2018-12-12 10:19:03 14672 [Note] InnoDB: Database physically writes the file full: wait...
+2018-12-12 10:19:04 14672 [Note] InnoDB: Setting log file .\ib_logfile101 size to 48 MB
+2018-12-12 10:19:04 14672 [Note] InnoDB: Setting log file .\ib_logfile1 size to 48 MB
+2018-12-12 10:19:04 14672 [Note] InnoDB: Renaming log file .\ib_logfile101 to .\ib_logfile0
+2018-12-12 10:19:04 14672 [Warning] InnoDB: New log files created, LSN=45781
+2018-12-12 10:19:04 14672 [Note] InnoDB: Doublewrite buffer not found: creating new
+2018-12-12 10:19:04 14672 [Note] InnoDB: Doublewrite buffer created
+2018-12-12 10:19:04 14672 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-12-12 10:19:04 14672 [Warning] InnoDB: Creating foreign key constraint system tables.
+2018-12-12 10:19:05 14672 [Note] InnoDB: Foreign key constraint system tables created
+2018-12-12 10:19:05 14672 [Note] InnoDB: Creating tablespace and datafile system tables.
+2018-12-12 10:19:05 14672 [Note] InnoDB: Tablespace and datafile system tables created.
+2018-12-12 10:19:05 14672 [Note] InnoDB: Waiting for purge to start
+2018-12-12 10:19:05 14672 [Note] InnoDB: 5.6.21 started; log sequence number 0
+2018-12-12 10:19:05 14672 [Warning] No existing UUID has been found, so we assume that this is the first time that this server has been started. Generating a new UUID: f8b0c24e-fdee-11e8-9561-54911fab3901.
+2018-12-12 10:19:05 14672 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-12-12 10:19:05 14672 [Note] IPv6 is available.
+2018-12-12 10:19:05 14672 [Note]   - '::' resolves to '::';
+2018-12-12 10:19:05 14672 [Note] Server socket created on IP: '::'.
+2018-12-12 10:19:05 14672 [Note] Event Scheduler: Loaded 0 events
+2018-12-12 10:19:05 14672 [Note] C:\data\SurfStack\amp\app\mysql\bin\mysqld.exe: ready for connections.
+Version: '5.6.21'  socket: ''  port: 3306  MySQL Community Server (GPL)
+2018-12-12 10:39:04 14672 [Note] C:\data\SurfStack\amp\app\mysql\bin\mysqld.exe: Normal shutdown
+
+2018-12-12 10:39:04 14672 [Note] Giving 0 client threads a chance to die gracefully
+2018-12-12 10:39:04 14672 [Note] Event Scheduler: Purging the queue. 0 events
+2018-12-12 10:39:04 14672 [Note] Shutting down slave threads
+2018-12-12 10:39:04 14672 [Note] Forcefully disconnecting 0 remaining clients
+2018-12-12 10:39:04 14672 [Note] Binlog end
+2018-12-12 10:39:04 14672 [Note] Shutting down plugin 'partition'
+2018-12-12 10:39:04 14672 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2018-12-12 10:39:04 14672 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+2018-12-12 10:39:04 14672 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+2018-12-12 10:39:04 14672 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+2018-12-12 10:39:04 14672 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+2018-12-12 10:39:04 14672 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+2018-12-12 10:39:04 14672 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+2018-12-12 10:39:04 14672 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+2018-12-12 10:39:04 14672 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+2018-12-12 10:39:04 14672 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+2018-12-12 10:39:04 14672 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+2018-12-12 10:39:04 14672 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+2018-12-12 10:39:04 14672 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+2018-12-12 10:39:04 14672 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+2018-12-12 10:39:04 14672 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+2018-12-12 10:39:04 14672 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+2018-12-12 10:39:04 14672 [Note] Shutting down plugin 'INNODB_METRICS'
+2018-12-12 10:39:04 14672 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+2018-12-12 10:39:04 14672 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+2018-12-12 10:39:04 14672 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+2018-12-12 10:39:04 14672 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+2018-12-12 10:39:04 14672 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+2018-12-12 10:39:04 14672 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+2018-12-12 10:39:04 14672 [Note] Shutting down plugin 'INNODB_CMPMEM'
+2018-12-12 10:39:04 14672 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+2018-12-12 10:39:04 14672 [Note] Shutting down plugin 'INNODB_CMP'
+2018-12-12 10:39:04 14672 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+2018-12-12 10:39:04 14672 [Note] Shutting down plugin 'INNODB_LOCKS'
+2018-12-12 10:39:04 14672 [Note] Shutting down plugin 'INNODB_TRX'
+2018-12-12 10:39:04 14672 [Note] Shutting down plugin 'InnoDB'
+2018-12-12 10:39:04 14672 [Note] InnoDB: FTS optimize thread exiting.
+2018-12-12 10:39:04 14672 [Note] InnoDB: Starting shutdown...
+2018-12-12 10:39:05 14672 [Note] InnoDB: Shutdown completed; log sequence number 1600607
+2018-12-12 10:39:05 14672 [Note] Shutting down plugin 'BLACKHOLE'
+2018-12-12 10:39:05 14672 [Note] Shutting down plugin 'ARCHIVE'
+2018-12-12 10:39:05 14672 [Note] Shutting down plugin 'MRG_MYISAM'
+2018-12-12 10:39:05 14672 [Note] Shutting down plugin 'MyISAM'
+2018-12-12 10:39:05 14672 [Note] Shutting down plugin 'MEMORY'
+2018-12-12 10:39:05 14672 [Note] Shutting down plugin 'CSV'
+2018-12-12 10:39:05 14672 [Note] Shutting down plugin 'sha256_password'
+2018-12-12 10:39:05 14672 [Note] Shutting down plugin 'mysql_old_password'
+2018-12-12 10:39:05 14672 [Note] Shutting down plugin 'mysql_native_password'
+2018-12-12 10:39:05 14672 [Note] Shutting down plugin 'binlog'
+2018-12-12 10:39:05 14672 [Note] C:\data\SurfStack\amp\app\mysql\bin\mysqld.exe: Shutdown complete
+
+2018-12-12 16:13:19 16192 [Note] Plugin 'FEDERATED' is disabled.
+2018-12-12 16:13:19 16192 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2018-12-12 16:13:19 16192 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-12-12 16:13:19 16192 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-12-12 16:13:19 16192 [Note] InnoDB: Memory barrier is not used
+2018-12-12 16:13:19 16192 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-12-12 16:13:19 16192 [Note] InnoDB: Not using CPU crc32 instructions
+2018-12-12 16:13:19 16192 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2018-12-12 16:13:19 16192 [Note] InnoDB: Completed initialization of buffer pool
+2018-12-12 16:13:19 16192 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-12-12 16:13:19 16192 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-12-12 16:13:19 16192 [Note] InnoDB: Waiting for purge to start
+2018-12-12 16:13:19 16192 [Note] InnoDB: 5.6.21 started; log sequence number 1600607
+2018-12-12 16:13:19 16192 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-12-12 16:13:19 16192 [Note] IPv6 is available.
+2018-12-12 16:13:19 16192 [Note]   - '::' resolves to '::';
+2018-12-12 16:13:19 16192 [Note] Server socket created on IP: '::'.
+2018-12-12 16:15:58 6316 [Note] Plugin 'FEDERATED' is disabled.
+2018-12-12 16:15:58 6316 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2018-12-12 16:15:58 6316 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-12-12 16:15:58 6316 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-12-12 16:15:58 6316 [Note] InnoDB: Memory barrier is not used
+2018-12-12 16:15:58 6316 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-12-12 16:15:58 6316 [Note] InnoDB: Not using CPU crc32 instructions
+2018-12-12 16:15:58 6316 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2018-12-12 16:15:58 6316 [Note] InnoDB: Completed initialization of buffer pool
+2018-12-12 16:15:58 6316 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-12-12 16:15:58 6316 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-12-12 16:15:58 6316 [Note] InnoDB: Waiting for purge to start
+2018-12-12 16:15:58 6316 [Note] InnoDB: 5.6.21 started; log sequence number 1600617
+2018-12-12 16:15:58 6316 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-12-12 16:15:58 6316 [Note] IPv6 is available.
+2018-12-12 16:15:58 6316 [Note]   - '::' resolves to '::';
+2018-12-12 16:15:58 6316 [Note] Server socket created on IP: '::'.
+2018-12-12 16:18:31 13600 [Note] Plugin 'FEDERATED' is disabled.
+2018-12-12 16:18:31 13600 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2018-12-12 16:18:31 13600 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-12-12 16:18:31 13600 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-12-12 16:18:31 13600 [Note] InnoDB: Memory barrier is not used
+2018-12-12 16:18:31 13600 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-12-12 16:18:31 13600 [Note] InnoDB: Not using CPU crc32 instructions
+2018-12-12 16:18:31 13600 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2018-12-12 16:18:31 13600 [Note] InnoDB: Completed initialization of buffer pool
+2018-12-12 16:18:31 13600 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-12-12 16:18:32 13600 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-12-12 16:18:32 13600 [Note] InnoDB: Waiting for purge to start
+2018-12-12 16:18:32 13600 [Note] InnoDB: 5.6.21 started; log sequence number 1600627
+2018-12-12 16:18:32 13600 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-12-12 16:18:32 13600 [Note] IPv6 is available.
+2018-12-12 16:18:32 13600 [Note]   - '::' resolves to '::';
+2018-12-12 16:18:32 13600 [Note] Server socket created on IP: '::'.
+2018-12-13 09:24:05 10484 [Note] Plugin 'FEDERATED' is disabled.
+2018-12-13 09:24:05 10484 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2018-12-13 09:24:05 10484 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-12-13 09:24:05 10484 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-12-13 09:24:05 10484 [Note] InnoDB: Memory barrier is not used
+2018-12-13 09:24:05 10484 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-12-13 09:24:05 10484 [Note] InnoDB: Not using CPU crc32 instructions
+2018-12-13 09:24:05 10484 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2018-12-13 09:24:05 10484 [Note] InnoDB: Completed initialization of buffer pool
+2018-12-13 09:24:05 10484 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-12-13 09:24:05 10484 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-12-13 09:24:05 10484 [Note] InnoDB: Waiting for purge to start
+2018-12-13 09:24:05 10484 [Note] InnoDB: 5.6.21 started; log sequence number 4119127
+2018-12-13 09:24:05 10484 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-12-13 09:24:05 10484 [Note] IPv6 is available.
+2018-12-13 09:24:05 10484 [Note]   - '::' resolves to '::';
+2018-12-13 09:24:05 10484 [Note] Server socket created on IP: '::'.
+2018-12-13 09:25:42 8584 [Note] Plugin 'FEDERATED' is disabled.
+2018-12-13 09:25:42 8584 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2018-12-13 09:25:42 8584 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-12-13 09:25:42 8584 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-12-13 09:25:42 8584 [Note] InnoDB: Memory barrier is not used
+2018-12-13 09:25:42 8584 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-12-13 09:25:42 8584 [Note] InnoDB: Not using CPU crc32 instructions
+2018-12-13 09:25:42 8584 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2018-12-13 09:25:42 8584 [Note] InnoDB: Completed initialization of buffer pool
+2018-12-13 09:25:42 8584 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-12-13 09:25:42 8584 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-12-13 09:25:42 8584 [Note] InnoDB: Waiting for purge to start
+2018-12-13 09:25:42 8584 [Note] InnoDB: 5.6.21 started; log sequence number 4119137
+2018-12-13 09:25:42 8584 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-12-13 09:25:42 8584 [Note] IPv6 is available.
+2018-12-13 09:25:42 8584 [Note]   - '::' resolves to '::';
+2018-12-13 09:25:42 8584 [Note] Server socket created on IP: '::'.
+2018-12-13 09:47:51 15392 [Note] Plugin 'FEDERATED' is disabled.
+2018-12-13 09:47:51 15392 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2018-12-13 09:47:51 15392 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-12-13 09:47:51 15392 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-12-13 09:47:51 15392 [Note] InnoDB: Memory barrier is not used
+2018-12-13 09:47:51 15392 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-12-13 09:47:51 15392 [Note] InnoDB: Not using CPU crc32 instructions
+2018-12-13 09:47:52 15392 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2018-12-13 09:47:52 15392 [Note] InnoDB: Completed initialization of buffer pool
+2018-12-13 09:47:52 15392 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-12-13 09:47:52 15392 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-12-13 09:47:52 15392 [Note] InnoDB: Waiting for purge to start
+2018-12-13 09:47:52 15392 [Note] InnoDB: 5.6.21 started; log sequence number 4119147
+2018-12-13 09:47:52 15392 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-12-13 09:47:52 15392 [Note] IPv6 is available.
+2018-12-13 09:47:52 15392 [Note]   - '::' resolves to '::';
+2018-12-13 09:47:52 15392 [Note] Server socket created on IP: '::'.
+2018-12-13 09:49:39 12800 [Note] Plugin 'FEDERATED' is disabled.
+2018-12-13 09:49:39 12800 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2018-12-13 09:49:39 12800 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-12-13 09:49:39 12800 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-12-13 09:49:39 12800 [Note] InnoDB: Memory barrier is not used
+2018-12-13 09:49:39 12800 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-12-13 09:49:39 12800 [Note] InnoDB: Not using CPU crc32 instructions
+2018-12-13 09:49:39 12800 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2018-12-13 09:49:39 12800 [Note] InnoDB: Completed initialization of buffer pool
+2018-12-13 09:49:39 12800 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-12-13 09:49:39 12800 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-12-13 09:49:39 12800 [Note] InnoDB: Waiting for purge to start
+2018-12-13 09:49:39 12800 [Note] InnoDB: 5.6.21 started; log sequence number 4121818
+2018-12-13 09:49:39 12800 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-12-13 09:49:39 12800 [Note] IPv6 is available.
+2018-12-13 09:49:39 12800 [Note]   - '::' resolves to '::';
+2018-12-13 09:49:39 12800 [Note] Server socket created on IP: '::'.
+2018-12-13 09:53:16 3768 [Note] Plugin 'FEDERATED' is disabled.
+2018-12-13 09:53:16 3768 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2018-12-13 09:53:16 3768 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-12-13 09:53:16 3768 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-12-13 09:53:16 3768 [Note] InnoDB: Memory barrier is not used
+2018-12-13 09:53:16 3768 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-12-13 09:53:16 3768 [Note] InnoDB: Not using CPU crc32 instructions
+2018-12-13 09:53:16 3768 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2018-12-13 09:53:16 3768 [Note] InnoDB: Completed initialization of buffer pool
+2018-12-13 09:53:16 3768 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-12-13 09:53:16 3768 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-12-13 09:53:16 3768 [Note] InnoDB: Waiting for purge to start
+2018-12-13 09:53:16 3768 [Note] InnoDB: 5.6.21 started; log sequence number 4121828
+2018-12-13 09:53:16 3768 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-12-13 09:53:16 3768 [Note] IPv6 is available.
+2018-12-13 09:53:16 3768 [Note]   - '::' resolves to '::';
+2018-12-13 09:53:16 3768 [Note] Server socket created on IP: '::'.
+2018-12-13 12:59:57 2116 [Note] Plugin 'FEDERATED' is disabled.
+2018-12-13 12:59:57 2116 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2018-12-13 12:59:57 2116 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-12-13 12:59:57 2116 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-12-13 12:59:57 2116 [Note] InnoDB: Memory barrier is not used
+2018-12-13 12:59:57 2116 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-12-13 12:59:57 2116 [Note] InnoDB: Not using CPU crc32 instructions
+2018-12-13 12:59:57 2116 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2018-12-13 12:59:57 2116 [Note] InnoDB: Completed initialization of buffer pool
+2018-12-13 12:59:57 2116 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-12-13 12:59:57 2116 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-12-13 12:59:57 2116 [Note] InnoDB: Waiting for purge to start
+2018-12-13 12:59:57 2116 [Note] InnoDB: 5.6.21 started; log sequence number 4121838
+2018-12-13 12:59:57 2116 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-12-13 12:59:57 2116 [Note] IPv6 is available.
+2018-12-13 12:59:57 2116 [Note]   - '::' resolves to '::';
+2018-12-13 12:59:57 2116 [Note] Server socket created on IP: '::'.
+2018-12-13 12:59:57 2116 [Note] Event Scheduler: Loaded 0 events
+2018-12-13 12:59:57 2116 [Note] C:\data\DzumlacekNG\amp\app\mysql\bin\mysqld.exe: ready for connections.
+Version: '5.6.21'  socket: ''  port: 3306  MySQL Community Server (GPL)
+2018-12-13 13:00:55 2116 [Note] C:\data\DzumlacekNG\amp\app\mysql\bin\mysqld.exe: Normal shutdown
+
+2018-12-13 13:00:55 2116 [Note] Giving 0 client threads a chance to die gracefully
+2018-12-13 13:00:55 2116 [Note] Event Scheduler: Purging the queue. 0 events
+2018-12-13 13:00:55 2116 [Note] Shutting down slave threads
+2018-12-13 13:00:55 2116 [Note] Forcefully disconnecting 0 remaining clients
+2018-12-13 13:00:55 2116 [Note] Binlog end
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'partition'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'INNODB_METRICS'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'INNODB_CMPMEM'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'INNODB_CMP'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'INNODB_LOCKS'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'INNODB_TRX'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'InnoDB'
+2018-12-13 13:00:55 2116 [Note] InnoDB: FTS optimize thread exiting.
+2018-12-13 13:00:55 2116 [Note] InnoDB: Starting shutdown...
+2018-12-13 13:00:55 2116 [Note] InnoDB: Shutdown completed; log sequence number 4121848
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'BLACKHOLE'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'ARCHIVE'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'MRG_MYISAM'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'MyISAM'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'MEMORY'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'CSV'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'sha256_password'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'mysql_old_password'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'mysql_native_password'
+2018-12-13 13:00:55 2116 [Note] Shutting down plugin 'binlog'
+2018-12-13 13:00:55 2116 [Note] C:\data\DzumlacekNG\amp\app\mysql\bin\mysqld.exe: Shutdown complete
+
+2018-12-13 13:03:23 11800 [Note] Plugin 'FEDERATED' is disabled.
+2018-12-13 13:03:23 11800 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2018-12-13 13:03:23 11800 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-12-13 13:03:23 11800 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-12-13 13:03:23 11800 [Note] InnoDB: Memory barrier is not used
+2018-12-13 13:03:23 11800 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-12-13 13:03:23 11800 [Note] InnoDB: Not using CPU crc32 instructions
+2018-12-13 13:03:23 11800 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2018-12-13 13:03:23 11800 [Note] InnoDB: Completed initialization of buffer pool
+2018-12-13 13:03:23 11800 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-12-13 13:03:23 11800 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-12-13 13:03:23 11800 [Note] InnoDB: Waiting for purge to start
+2018-12-13 13:03:23 11800 [Note] InnoDB: 5.6.21 started; log sequence number 4121848
+2018-12-13 13:03:23 11800 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-12-13 13:03:23 11800 [Note] IPv6 is available.
+2018-12-13 13:03:23 11800 [Note]   - '::' resolves to '::';
+2018-12-13 13:03:23 11800 [Note] Server socket created on IP: '::'.
+2018-12-13 13:03:23 11800 [Note] Event Scheduler: Loaded 0 events
+2018-12-13 13:03:23 11800 [Note] C:\data\DzumlacekNG\amp\app\mysql\bin\mysqld.exe: ready for connections.
+Version: '5.6.21'  socket: ''  port: 3306  MySQL Community Server (GPL)
+2018-12-13 13:03:28 2ea4 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:03:28 2ea4 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_session" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:03:28 2ea4 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:03:28 2ea4 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_extensions" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:03:28 2ea4 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:03:28 2ea4 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_viewlevels" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:03:28 2ea4 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:03:28 2ea4 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_usergroups" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:03:28 2ea4 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:03:28 2ea4 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_menu" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:03:28 2ea4 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:03:28 2ea4 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_languages" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:03:28 2ea4 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:03:28 2ea4 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_template_styles" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:03:28 2ea4 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:03:28 2ea4 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_assets" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:03:28 2ea4 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:03:28 2ea4 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_content" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:03:28 2ea4 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:03:28 2ea4 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_content_frontpage" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:03:28 2ea4 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:03:28 2ea4 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_categories" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:03:28 2ea4 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:03:28 2ea4 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_users" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:03:28 2ea4 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:03:28 2ea4 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_contentitem_tag_map" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:03:28 2ea4 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:03:28 2ea4 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_tags" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:03:29 2ea4 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:03:29 2ea4 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_fields" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:03:29 2ea4 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:03:29 2ea4 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_fields_groups" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:03:29 2ea4 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:03:29 2ea4 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_fields_categories" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:03:29 2ea4 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:03:29 2ea4 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_modules" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:03:29 2ea4 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:03:29 2ea4 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_modules_menu" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:03:48 11800 [Note] C:\data\DzumlacekNG\amp\app\mysql\bin\mysqld.exe: Normal shutdown
+
+2018-12-13 13:03:48 11800 [Note] Giving 0 client threads a chance to die gracefully
+2018-12-13 13:03:48 11800 [Note] Event Scheduler: Purging the queue. 0 events
+2018-12-13 13:03:48 11800 [Note] Shutting down slave threads
+2018-12-13 13:03:48 11800 [Note] Forcefully disconnecting 0 remaining clients
+2018-12-13 13:03:48 11800 [Note] Binlog end
+2018-12-13 13:03:48 11800 [Note] Shutting down plugin 'partition'
+2018-12-13 13:03:48 11800 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2018-12-13 13:03:48 11800 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+2018-12-13 13:03:48 11800 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+2018-12-13 13:03:48 11800 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+2018-12-13 13:03:48 11800 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+2018-12-13 13:03:48 11800 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+2018-12-13 13:03:48 11800 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+2018-12-13 13:03:48 11800 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+2018-12-13 13:03:48 11800 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+2018-12-13 13:03:48 11800 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+2018-12-13 13:03:48 11800 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+2018-12-13 13:03:48 11800 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+2018-12-13 13:03:48 11800 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+2018-12-13 13:03:48 11800 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+2018-12-13 13:03:48 11800 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+2018-12-13 13:03:48 11800 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+2018-12-13 13:03:48 11800 [Note] Shutting down plugin 'INNODB_METRICS'
+2018-12-13 13:03:48 11800 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+2018-12-13 13:03:48 11800 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+2018-12-13 13:03:48 11800 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+2018-12-13 13:03:48 11800 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+2018-12-13 13:03:48 11800 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+2018-12-13 13:03:48 11800 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+2018-12-13 13:03:48 11800 [Note] Shutting down plugin 'INNODB_CMPMEM'
+2018-12-13 13:03:48 11800 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+2018-12-13 13:03:48 11800 [Note] Shutting down plugin 'INNODB_CMP'
+2018-12-13 13:03:48 11800 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+2018-12-13 13:03:48 11800 [Note] Shutting down plugin 'INNODB_LOCKS'
+2018-12-13 13:03:48 11800 [Note] Shutting down plugin 'INNODB_TRX'
+2018-12-13 13:03:48 11800 [Note] Shutting down plugin 'InnoDB'
+2018-12-13 13:03:48 11800 [Note] InnoDB: FTS optimize thread exiting.
+2018-12-13 13:03:48 11800 [Note] InnoDB: Starting shutdown...
+2018-12-13 13:03:49 11800 [Note] InnoDB: Shutdown completed; log sequence number 4123704
+2018-12-13 13:03:49 11800 [Note] Shutting down plugin 'BLACKHOLE'
+2018-12-13 13:03:49 11800 [Note] Shutting down plugin 'ARCHIVE'
+2018-12-13 13:03:49 11800 [Note] Shutting down plugin 'MRG_MYISAM'
+2018-12-13 13:03:49 11800 [Note] Shutting down plugin 'MyISAM'
+2018-12-13 13:03:49 11800 [Note] Shutting down plugin 'MEMORY'
+2018-12-13 13:03:49 11800 [Note] Shutting down plugin 'CSV'
+2018-12-13 13:03:49 11800 [Note] Shutting down plugin 'sha256_password'
+2018-12-13 13:03:49 11800 [Note] Shutting down plugin 'mysql_old_password'
+2018-12-13 13:03:49 11800 [Note] Shutting down plugin 'mysql_native_password'
+2018-12-13 13:03:49 11800 [Note] Shutting down plugin 'binlog'
+2018-12-13 13:03:49 11800 [Note] C:\data\DzumlacekNG\amp\app\mysql\bin\mysqld.exe: Shutdown complete
+
+2018-12-13 13:34:15 9760 [Note] Plugin 'FEDERATED' is disabled.
+2018-12-13 13:34:15 9760 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2018-12-13 13:34:15 9760 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-12-13 13:34:15 9760 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-12-13 13:34:15 9760 [Note] InnoDB: Memory barrier is not used
+2018-12-13 13:34:15 9760 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-12-13 13:34:15 9760 [Note] InnoDB: Not using CPU crc32 instructions
+2018-12-13 13:34:15 9760 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2018-12-13 13:34:15 9760 [Note] InnoDB: Completed initialization of buffer pool
+2018-12-13 13:34:15 9760 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-12-13 13:34:16 9760 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-12-13 13:34:16 9760 [Note] InnoDB: Waiting for purge to start
+2018-12-13 13:34:16 9760 [Note] InnoDB: 5.6.21 started; log sequence number 4123704
+2018-12-13 13:34:16 9760 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-12-13 13:34:16 9760 [Note] IPv6 is available.
+2018-12-13 13:34:16 9760 [Note]   - '::' resolves to '::';
+2018-12-13 13:34:16 9760 [Note] Server socket created on IP: '::'.
+2018-12-13 13:34:16 9760 [Note] Event Scheduler: Loaded 0 events
+2018-12-13 13:34:16 9760 [Note] C:\data\DzumlacekNG\amp\app\mysql\bin\mysqld.exe: ready for connections.
+Version: '5.6.21'  socket: ''  port: 3306  MySQL Community Server (GPL)
+2018-12-13 13:34:25 9760 [Note] C:\data\DzumlacekNG\amp\app\mysql\bin\mysqld.exe: Normal shutdown
+
+2018-12-13 13:34:25 9760 [Note] Giving 0 client threads a chance to die gracefully
+2018-12-13 13:34:25 9760 [Note] Event Scheduler: Purging the queue. 0 events
+2018-12-13 13:34:25 9760 [Note] Shutting down slave threads
+2018-12-13 13:34:25 9760 [Note] Forcefully disconnecting 0 remaining clients
+2018-12-13 13:34:25 9760 [Note] Binlog end
+2018-12-13 13:34:25 9760 [Note] Shutting down plugin 'partition'
+2018-12-13 13:34:25 9760 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2018-12-13 13:34:25 9760 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+2018-12-13 13:34:25 9760 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+2018-12-13 13:34:25 9760 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+2018-12-13 13:34:25 9760 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+2018-12-13 13:34:25 9760 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+2018-12-13 13:34:25 9760 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+2018-12-13 13:34:25 9760 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+2018-12-13 13:34:25 9760 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+2018-12-13 13:34:25 9760 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+2018-12-13 13:34:25 9760 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+2018-12-13 13:34:25 9760 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+2018-12-13 13:34:25 9760 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+2018-12-13 13:34:25 9760 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+2018-12-13 13:34:25 9760 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+2018-12-13 13:34:25 9760 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+2018-12-13 13:34:25 9760 [Note] Shutting down plugin 'INNODB_METRICS'
+2018-12-13 13:34:25 9760 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+2018-12-13 13:34:25 9760 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+2018-12-13 13:34:25 9760 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+2018-12-13 13:34:25 9760 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+2018-12-13 13:34:25 9760 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+2018-12-13 13:34:25 9760 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+2018-12-13 13:34:25 9760 [Note] Shutting down plugin 'INNODB_CMPMEM'
+2018-12-13 13:34:25 9760 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+2018-12-13 13:34:25 9760 [Note] Shutting down plugin 'INNODB_CMP'
+2018-12-13 13:34:25 9760 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+2018-12-13 13:34:25 9760 [Note] Shutting down plugin 'INNODB_LOCKS'
+2018-12-13 13:34:25 9760 [Note] Shutting down plugin 'INNODB_TRX'
+2018-12-13 13:34:25 9760 [Note] Shutting down plugin 'InnoDB'
+2018-12-13 13:34:25 9760 [Note] InnoDB: FTS optimize thread exiting.
+2018-12-13 13:34:25 9760 [Note] InnoDB: Starting shutdown...
+2018-12-13 13:34:26 9760 [Note] InnoDB: Shutdown completed; log sequence number 4123714
+2018-12-13 13:34:26 9760 [Note] Shutting down plugin 'BLACKHOLE'
+2018-12-13 13:34:26 9760 [Note] Shutting down plugin 'ARCHIVE'
+2018-12-13 13:34:26 9760 [Note] Shutting down plugin 'MRG_MYISAM'
+2018-12-13 13:34:26 9760 [Note] Shutting down plugin 'MyISAM'
+2018-12-13 13:34:26 9760 [Note] Shutting down plugin 'MEMORY'
+2018-12-13 13:34:26 9760 [Note] Shutting down plugin 'CSV'
+2018-12-13 13:34:26 9760 [Note] Shutting down plugin 'sha256_password'
+2018-12-13 13:34:26 9760 [Note] Shutting down plugin 'mysql_old_password'
+2018-12-13 13:34:26 9760 [Note] Shutting down plugin 'mysql_native_password'
+2018-12-13 13:34:26 9760 [Note] Shutting down plugin 'binlog'
+2018-12-13 13:34:26 9760 [Note] C:\data\DzumlacekNG\amp\app\mysql\bin\mysqld.exe: Shutdown complete
+
+2018-12-13 13:42:02 14484 [Note] Plugin 'FEDERATED' is disabled.
+2018-12-13 13:42:02 14484 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2018-12-13 13:42:02 14484 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-12-13 13:42:02 14484 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-12-13 13:42:02 14484 [Note] InnoDB: Memory barrier is not used
+2018-12-13 13:42:02 14484 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-12-13 13:42:02 14484 [Note] InnoDB: Not using CPU crc32 instructions
+2018-12-13 13:42:02 14484 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2018-12-13 13:42:02 14484 [Note] InnoDB: Completed initialization of buffer pool
+2018-12-13 13:42:02 14484 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-12-13 13:42:02 14484 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-12-13 13:42:02 14484 [Note] InnoDB: Waiting for purge to start
+2018-12-13 13:42:02 14484 [Note] InnoDB: 5.6.21 started; log sequence number 4123714
+2018-12-13 13:42:02 14484 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-12-13 13:42:02 14484 [Note] IPv6 is available.
+2018-12-13 13:42:02 14484 [Note]   - '::' resolves to '::';
+2018-12-13 13:42:02 14484 [Note] Server socket created on IP: '::'.
+2018-12-13 13:42:02 14484 [Note] Event Scheduler: Loaded 0 events
+2018-12-13 13:42:02 14484 [Note] C:\data\DzumlacekNG\amp\app\mysql\bin\mysqld.exe: ready for connections.
+Version: '5.6.21'  socket: ''  port: 3306  MySQL Community Server (GPL)
+2018-12-13 13:42:05 168c InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:42:05 168c InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_session" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:42:05 168c InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:42:05 168c InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_extensions" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:42:05 168c InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:42:05 168c InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_viewlevels" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:42:05 168c InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:42:05 168c InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_usergroups" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:42:05 168c InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:42:05 168c InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_menu" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:42:05 168c InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:42:05 168c InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_languages" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:42:05 168c InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:42:05 168c InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_template_styles" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:42:05 168c InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:42:05 168c InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_assets" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:42:05 168c InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:42:05 168c InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_content" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:42:05 168c InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:42:05 168c InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_content_frontpage" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:42:05 168c InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:42:05 168c InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_categories" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:42:05 168c InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:42:05 168c InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_users" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:42:05 168c InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:42:05 168c InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_contentitem_tag_map" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:42:05 168c InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:42:05 168c InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_tags" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:42:06 168c InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:42:06 168c InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_fields" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:42:06 168c InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:42:06 168c InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_fields_groups" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:42:06 168c InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:42:06 168c InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_fields_categories" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:42:06 168c InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:42:06 168c InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_modules" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:42:06 168c InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:42:06 168c InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_modules_menu" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:42:15 4420 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:42:15 4420 InnoDB: Recalculation of persistent statistics requested for table "dzumlacekng"."dng_session" but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2018-12-13 13:42:16 168c InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:42:16 168c InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_user_usergroup_map" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 13:42:26 4420 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 13:42:26 4420 InnoDB: Recalculation of persistent statistics requested for table "dzumlacekng"."dng_session" but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2018-12-13 13:42:37 14484 [Note] C:\data\DzumlacekNG\amp\app\mysql\bin\mysqld.exe: Normal shutdown
+
+2018-12-13 13:42:37 14484 [Note] Giving 0 client threads a chance to die gracefully
+2018-12-13 13:42:37 14484 [Note] Event Scheduler: Purging the queue. 0 events
+2018-12-13 13:42:37 14484 [Note] Shutting down slave threads
+2018-12-13 13:42:37 14484 [Note] Forcefully disconnecting 0 remaining clients
+2018-12-13 13:42:37 14484 [Note] Binlog end
+2018-12-13 13:42:37 14484 [Note] Shutting down plugin 'partition'
+2018-12-13 13:42:37 14484 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2018-12-13 13:42:37 14484 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+2018-12-13 13:42:37 14484 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+2018-12-13 13:42:37 14484 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+2018-12-13 13:42:37 14484 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+2018-12-13 13:42:37 14484 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+2018-12-13 13:42:37 14484 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+2018-12-13 13:42:37 14484 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+2018-12-13 13:42:37 14484 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+2018-12-13 13:42:37 14484 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+2018-12-13 13:42:37 14484 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+2018-12-13 13:42:37 14484 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+2018-12-13 13:42:37 14484 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+2018-12-13 13:42:37 14484 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+2018-12-13 13:42:37 14484 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+2018-12-13 13:42:37 14484 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+2018-12-13 13:42:37 14484 [Note] Shutting down plugin 'INNODB_METRICS'
+2018-12-13 13:42:37 14484 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+2018-12-13 13:42:37 14484 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+2018-12-13 13:42:37 14484 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+2018-12-13 13:42:37 14484 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+2018-12-13 13:42:37 14484 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+2018-12-13 13:42:37 14484 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+2018-12-13 13:42:37 14484 [Note] Shutting down plugin 'INNODB_CMPMEM'
+2018-12-13 13:42:37 14484 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+2018-12-13 13:42:37 14484 [Note] Shutting down plugin 'INNODB_CMP'
+2018-12-13 13:42:37 14484 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+2018-12-13 13:42:37 14484 [Note] Shutting down plugin 'INNODB_LOCKS'
+2018-12-13 13:42:37 14484 [Note] Shutting down plugin 'INNODB_TRX'
+2018-12-13 13:42:37 14484 [Note] Shutting down plugin 'InnoDB'
+2018-12-13 13:42:37 14484 [Note] InnoDB: FTS optimize thread exiting.
+2018-12-13 13:42:37 14484 [Note] InnoDB: Starting shutdown...
+2018-12-13 13:42:38 14484 [Note] InnoDB: Shutdown completed; log sequence number 4127139
+2018-12-13 13:42:38 14484 [Note] Shutting down plugin 'BLACKHOLE'
+2018-12-13 13:42:38 14484 [Note] Shutting down plugin 'ARCHIVE'
+2018-12-13 13:42:38 14484 [Note] Shutting down plugin 'MRG_MYISAM'
+2018-12-13 13:42:38 14484 [Note] Shutting down plugin 'MyISAM'
+2018-12-13 13:42:38 14484 [Note] Shutting down plugin 'MEMORY'
+2018-12-13 13:42:38 14484 [Note] Shutting down plugin 'CSV'
+2018-12-13 13:42:38 14484 [Note] Shutting down plugin 'sha256_password'
+2018-12-13 13:42:38 14484 [Note] Shutting down plugin 'mysql_old_password'
+2018-12-13 13:42:38 14484 [Note] Shutting down plugin 'mysql_native_password'
+2018-12-13 13:42:38 14484 [Note] Shutting down plugin 'binlog'
+2018-12-13 13:42:38 14484 [Note] C:\data\DzumlacekNG\amp\app\mysql\bin\mysqld.exe: Shutdown complete
+
+2018-12-13 13:44:38 15368 [Note] Plugin 'FEDERATED' is disabled.
+2018-12-13 13:44:38 15368 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2018-12-13 13:44:38 15368 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-12-13 13:44:38 15368 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-12-13 13:44:38 15368 [Note] InnoDB: Memory barrier is not used
+2018-12-13 13:44:38 15368 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-12-13 13:44:38 15368 [Note] InnoDB: Not using CPU crc32 instructions
+2018-12-13 13:44:38 15368 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2018-12-13 13:44:38 15368 [Note] InnoDB: Completed initialization of buffer pool
+2018-12-13 13:44:38 15368 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-12-13 13:44:38 15368 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-12-13 13:44:38 15368 [Note] InnoDB: Waiting for purge to start
+2018-12-13 13:44:39 15368 [Note] InnoDB: 5.6.21 started; log sequence number 4127139
+2018-12-13 13:44:39 15368 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-12-13 13:44:39 15368 [Note] IPv6 is available.
+2018-12-13 13:44:39 15368 [Note]   - '::' resolves to '::';
+2018-12-13 13:44:39 15368 [Note] Server socket created on IP: '::'.
+2018-12-13 14:06:22 6560 [Note] Plugin 'FEDERATED' is disabled.
+2018-12-13 14:06:22 6560 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2018-12-13 14:06:22 6560 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-12-13 14:06:22 6560 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-12-13 14:06:22 6560 [Note] InnoDB: Memory barrier is not used
+2018-12-13 14:06:22 6560 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-12-13 14:06:22 6560 [Note] InnoDB: Not using CPU crc32 instructions
+2018-12-13 14:06:22 6560 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2018-12-13 14:06:22 6560 [Note] InnoDB: Completed initialization of buffer pool
+2018-12-13 14:06:22 6560 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-12-13 14:06:22 6560 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-12-13 14:06:22 6560 [Note] InnoDB: Waiting for purge to start
+2018-12-13 14:06:23 6560 [Note] InnoDB: 5.6.21 started; log sequence number 4128995
+2018-12-13 14:06:23 6560 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-12-13 14:06:23 6560 [Note] IPv6 is available.
+2018-12-13 14:06:23 6560 [Note]   - '::' resolves to '::';
+2018-12-13 14:06:23 6560 [Note] Server socket created on IP: '::'.
+2018-12-13 14:06:23 6560 [Note] Event Scheduler: Loaded 0 events
+2018-12-13 14:06:23 6560 [Note] C:\data\Release\amp\app\mysql\bin\mysqld.exe: ready for connections.
+Version: '5.6.21'  socket: ''  port: 3306  MySQL Community Server (GPL)
+2018-12-13 14:06:42 4630 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 14:06:42 4630 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_session" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 14:06:42 4630 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 14:06:42 4630 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_extensions" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 14:06:42 4630 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 14:06:42 4630 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_viewlevels" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 14:06:42 4630 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 14:06:42 4630 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_usergroups" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 14:06:42 4630 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 14:06:42 4630 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_menu" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 14:06:42 4630 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 14:06:42 4630 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_languages" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 14:06:42 4630 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 14:06:42 4630 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_template_styles" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 14:06:42 4630 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 14:06:42 4630 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_assets" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 14:06:42 4630 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 14:06:42 4630 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_content" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 14:06:42 4630 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 14:06:42 4630 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_content_frontpage" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 14:06:42 4630 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 14:06:42 4630 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_categories" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 14:06:42 4630 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 14:06:42 4630 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_users" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 14:06:42 4630 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 14:06:42 4630 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_contentitem_tag_map" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 14:06:42 4630 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 14:06:42 4630 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_tags" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 14:06:42 4630 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 14:06:42 4630 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_fields" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 14:06:42 4630 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 14:06:42 4630 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_fields_groups" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 14:06:42 4630 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 14:06:42 4630 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_fields_categories" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 14:06:43 4630 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 14:06:43 4630 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_modules" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 14:06:43 4630 InnoDB: Error: Table "mysql"."innodb_table_stats" not found.
+2018-12-13 14:06:43 4630 InnoDB: Error: Fetch of persistent statistics requested for table "dzumlacekng"."dng_modules_menu" but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-12-13 14:06:56 6560 [Note] C:\data\Release\amp\app\mysql\bin\mysqld.exe: Normal shutdown
+
+2018-12-13 14:06:56 6560 [Note] Giving 0 client threads a chance to die gracefully
+2018-12-13 14:06:56 6560 [Note] Event Scheduler: Purging the queue. 0 events
+2018-12-13 14:06:56 6560 [Note] Shutting down slave threads
+2018-12-13 14:06:56 6560 [Note] Forcefully disconnecting 0 remaining clients
+2018-12-13 14:06:56 6560 [Note] Binlog end
+2018-12-13 14:06:56 6560 [Note] Shutting down plugin 'partition'
+2018-12-13 14:06:56 6560 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2018-12-13 14:06:56 6560 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+2018-12-13 14:06:56 6560 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+2018-12-13 14:06:56 6560 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+2018-12-13 14:06:56 6560 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+2018-12-13 14:06:56 6560 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+2018-12-13 14:06:56 6560 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+2018-12-13 14:06:56 6560 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+2018-12-13 14:06:56 6560 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+2018-12-13 14:06:56 6560 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+2018-12-13 14:06:56 6560 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+2018-12-13 14:06:56 6560 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+2018-12-13 14:06:56 6560 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+2018-12-13 14:06:56 6560 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+2018-12-13 14:06:56 6560 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+2018-12-13 14:06:56 6560 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+2018-12-13 14:06:56 6560 [Note] Shutting down plugin 'INNODB_METRICS'
+2018-12-13 14:06:56 6560 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+2018-12-13 14:06:56 6560 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+2018-12-13 14:06:56 6560 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+2018-12-13 14:06:56 6560 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+2018-12-13 14:06:56 6560 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+2018-12-13 14:06:56 6560 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+2018-12-13 14:06:56 6560 [Note] Shutting down plugin 'INNODB_CMPMEM'
+2018-12-13 14:06:56 6560 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+2018-12-13 14:06:56 6560 [Note] Shutting down plugin 'INNODB_CMP'
+2018-12-13 14:06:56 6560 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+2018-12-13 14:06:56 6560 [Note] Shutting down plugin 'INNODB_LOCKS'
+2018-12-13 14:06:56 6560 [Note] Shutting down plugin 'INNODB_TRX'
+2018-12-13 14:06:56 6560 [Note] Shutting down plugin 'InnoDB'
+2018-12-13 14:06:56 6560 [Note] InnoDB: FTS optimize thread exiting.
+2018-12-13 14:06:56 6560 [Note] InnoDB: Starting shutdown...
+2018-12-13 14:06:57 6560 [Note] InnoDB: Shutdown completed; log sequence number 4132541
+2018-12-13 14:06:57 6560 [Note] Shutting down plugin 'BLACKHOLE'
+2018-12-13 14:06:57 6560 [Note] Shutting down plugin 'ARCHIVE'
+2018-12-13 14:06:57 6560 [Note] Shutting down plugin 'MRG_MYISAM'
+2018-12-13 14:06:57 6560 [Note] Shutting down plugin 'MyISAM'
+2018-12-13 14:06:57 6560 [Note] Shutting down plugin 'MEMORY'
+2018-12-13 14:06:57 6560 [Note] Shutting down plugin 'CSV'
+2018-12-13 14:06:57 6560 [Note] Shutting down plugin 'sha256_password'
+2018-12-13 14:06:57 6560 [Note] Shutting down plugin 'mysql_old_password'
+2018-12-13 14:06:57 6560 [Note] Shutting down plugin 'mysql_native_password'
+2018-12-13 14:06:57 6560 [Note] Shutting down plugin 'binlog'
+2018-12-13 14:06:57 6560 [Note] C:\data\Release\amp\app\mysql\bin\mysqld.exe: Shutdown complete
+
+2018-12-13 14:12:14 8856 [Note] Plugin 'FEDERATED' is disabled.
+2018-12-13 14:12:14 8856 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2018-12-13 14:12:14 8856 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-12-13 14:12:14 8856 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-12-13 14:12:14 8856 [Note] InnoDB: Memory barrier is not used
+2018-12-13 14:12:14 8856 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-12-13 14:12:14 8856 [Note] InnoDB: Not using CPU crc32 instructions
+2018-12-13 14:12:14 8856 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2018-12-13 14:12:14 8856 [Note] InnoDB: Completed initialization of buffer pool
+2018-12-13 14:12:15 8856 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-12-13 14:12:15 8856 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-12-13 14:12:15 8856 [Note] InnoDB: Waiting for purge to start
+2018-12-13 14:12:15 8856 [Note] InnoDB: 5.6.21 started; log sequence number 4132541
+2018-12-13 14:12:15 8856 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-12-13 14:12:15 8856 [Note] IPv6 is available.
+2018-12-13 14:12:15 8856 [Note]   - '::' resolves to '::';
+2018-12-13 14:12:15 8856 [Note] Server socket created on IP: '::'.
+2018-12-13 14:14:27 2428 [Note] Plugin 'FEDERATED' is disabled.
+2018-12-13 14:14:27 2428 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2018-12-13 14:14:27 2428 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-12-13 14:14:27 2428 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-12-13 14:14:27 2428 [Note] InnoDB: Memory barrier is not used
+2018-12-13 14:14:27 2428 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-12-13 14:14:27 2428 [Note] InnoDB: Not using CPU crc32 instructions
+2018-12-13 14:14:27 2428 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2018-12-13 14:14:27 2428 [Note] InnoDB: Completed initialization of buffer pool
+2018-12-13 14:14:27 2428 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-12-13 14:14:27 2428 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-12-13 14:14:27 2428 [Note] InnoDB: Waiting for purge to start
+2018-12-13 14:14:28 2428 [Note] InnoDB: 5.6.21 started; log sequence number 4134381
+2018-12-13 14:14:28 2428 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-12-13 14:14:28 2428 [Note] IPv6 is available.
+2018-12-13 14:14:28 2428 [Note]   - '::' resolves to '::';
+2018-12-13 14:14:28 2428 [Note] Server socket created on IP: '::'.

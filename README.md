@@ -1,30 +1,28 @@
-Dzumlacek New Generation
+Džumlaček (Joomla! Czech) WAMP server New Generation
 ==============
-This is fork of [SurfStack Wamp](https://github.com/josephspurrier/surfstack-wamp). There is no real code changes, just removing functions which are not necessary :
-- no need to have anything but Apache, MySQL and PHP
 
-as the main goal is to provide an easy WAMP stack with Joomla! environment.
+Verze 3.9.1 (vychází z čísla naistalované Joomly)
 
-No installation required. Just download, extract, and run SSWamp.exe to gain access to the most widely used applications on the web.
+Přenosné běhové prostředí pro Microsoft Windows, které uživatelům přináší platformu pro testování Joomly.
 
-You deserve a suite of tools that works as efficiently as you do so we've designed a rock solid environment for use on your next endeavour.
+Historie aplikace sahá do roku 2007, kdy se objevila potřeba mít nějaké jednoduché testovací běhové prostředí do Microsoft Windows.
 
-Screenshots are available in the [Wiki](https://github.com/josephspurrier/surfstack-wamp/wiki/SurfStack-WAMP-Screenshots).
+Projekt prošel několika stádiy dle toho, na jakém balíčku pro WAMP byl postaven.
 
-SurfStack WAMP allows HTML websites and PHP applications to run on a Windows
-computer. SurfStack WAMP is a package of open source software that includes:
+Současná verze je forkem aplikace [SurfStack Wamp](https://github.com/josephspurrier/surfstack-wamp). Nejsou zde prozatím nějaké zásadní změny v kódu, vše je zatím vedeno v úrovni zbavení se kódu, který pro účely Džumlačeku není potřebný.
+
+- není nutno mít něco jiného než Apache, MySQL a PHP
+- existuje speciální spouštěcí aplikace pro snadnou správu běhového prostředí
+
+není nutná žádná instalace, balíček s archivem rozbalte do PC a spusťte aplikaci DžumlačekNG.exe.
+
+V tuto chvíli je k dispozici :
 - Apache v2.4.10 (Web Server) (10-20-2014 32-bit VC11)
-- Nginx v1.7.7 (Web Server) (10-28-2014)
-- MySQL v5.6.21 (Relational Database) (09-23-2014 32-bit)
-- MongoDB v2.6.5 (Document Database) (10-08-2014 64-bit)
-- PHP TS and NTS v5.6.0 (Web Language) (08-28-2014)
-- Memcached v1.4.4 (Object Caching System) (12-09-2009)
+- MySQL v5.6.21 (Databáze) (09-23-2014 32-bit)
+- PHP TS v5.6.0 (Skriptovací jazyk) (08-28-2014)
 - Adminer v4.1.0 (MySQL Database Manager) (04-18-2014)
-- Genghis v2.3.11 (MongoDB Database Manager) (03-20-2014)
-- Subversion v1.8.10 (Version Control System) (08-11-2014) 
-- msysGit Net Install v1.9.4 (Version Control System) (09-29-2014 Preview)
 
-One-click setup and usage of popular PHP tools:
+Na jedno kliknutí jsou k dispozici:
 - Composer (PHP Dependency Manager) (Downloads and installs the latest version)
 - PHPUnit (PHP Test Framework) (Downloads and installs the latest version)
 - PEAR (PHP Extension and Application Repository) (Downloads and installs the latest version)
@@ -32,7 +30,7 @@ One-click setup and usage of popular PHP tools:
 - phpdbg (PHP Debugger) (Command prompt)
 - Phalcon Tools (Command Line Utility) (Command prompt)
 
-PHP extensions preloaded:
+PHP rozšíření:
 - Phalcon v1.3.4 (High Performance PHP Framework) (10-29-2014 32-bit)
 - Xdebug v2.2.6 (Debugger and Profiler) (11-15-2014 32-bit)
 - Mongo v1.5.6 (MongoDB Driver) (11-11-2014 32-bit)
@@ -40,10 +38,8 @@ PHP extensions preloaded:
 
 Download
 ------------
-The latest release is [v2.1.0](https://github.com/josephspurrier/surfstack-wamp/releases/tag/2.1.0) (11-27-2014).
+Poslední verze [v3.9.1](https://github.com/svatas/dzumlacekNG/releases) (13-12-2018).
 
-The repository does not contain any binaries. Be sure to download the latest
-release which includes the binaries for Apache, PHP, etc.
 
 Instructions
 ------------
@@ -75,7 +71,7 @@ Folders
 - \amp\config: contains custom configurations for the applications
 - \amp\doc: contains CHANGELOG, LICENSE, README
 - \amp\src: contains C# source code for SSWamp.exe
-- \webroot\localhost\public: default location for all web files 
+- \webroot\localhost\public: default location for all web files
 
 Notes
 -----
