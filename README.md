@@ -6,14 +6,14 @@ Přenosné běhové prostředí pro Microsoft Windows, které uživatelům přin
 
 Historie aplikace sahá do roku 2007, kdy se objevila potřeba mít nějaké jednoduché testovací běhové prostředí do Microsoft Windows.
 
-Projekt prošel několika stádiy dle toho, na jakém balíčku pro WAMP byl postaven.
+Projekt prošel několika stádii dle toho, na jakém balíčku pro WAMP byl postaven.
 
 Současná verze je forkem aplikace [SurfStack Wamp](https://github.com/josephspurrier/surfstack-wamp). Nejsou zde prozatím nějaké zásadní změny v kódu, vše je zatím vedeno v úrovni zbavení se kódu, který pro účely Džumlačeku není potřebný.
 
 - není nutno mít něco jiného než Apache, MySQL a PHP
 - existuje speciální spouštěcí aplikace pro snadnou správu běhového prostředí
 
-není nutná žádná instalace, balíček s archivem rozbalte do PC a spusťte aplikaci DžumlačekNG.exe.
+Není nutná žádná instalace, balíček s archivem rozbalte do PC a spusťte aplikaci DžumlačekNG.exe.
 
 Číslo verze Džumlačeku vychází z verze Joomly!, která je v balíčku dostupná.
 
@@ -42,33 +42,23 @@ Download
 Poslední verze [v3.9.1](https://github.com/svatas/dzumlacekNG/releases) (13-12-2018).
 
 
-Instructions
+Instrukce
 ------------
-1. Extract the contents to any folder
-2. Run SSWamp.exe
-3. Place a check next to each server you want to start
-4. Click Turn On
-5. Test the configuration by clicking Browse HTTP
+1. Rozbalte obsah balíčku do libovolné složky
+2. Spusťte **dzumlacekNG.exe**
+3. Zatrhněte zatržítko u každého serveru, který chcete spustit
+4. Klikněte na tlačítko **Spustit**
+5. Stiskněte tlačítko Joomla! Frontend pro uživatelskou část Joomly! nebo tlačítko Joomla! Backend pro správcovské rozhraní
 
-Popular Application Testing (Drupal, WordPress, SQL Buddy, phpMyAdmin, etc.)
-----------------------------------------------------------------------------
-1. Download the files from Drupal or WordPress
-2. Delete the file: \webroot\localhost\public\index.php
-3. Extract the Drupal or WordPress files to the \webroot\localhost\public directory
-4. Run SSWamp.exe
-5. Place a check next to the Apache and MySQL options
-6. Click Turn On
-7. Test the configuration by clicking Browse HTTP
-
-Default MySQL Database Settings
+Výchozí nastavení MySQL Databáze
 -------------------------------
-- Database Name: test
-- Username: root
-- Password: (blank)
+- Jméno databáze: DNG
+- Uživatelské jméno: root
+- Password: (prázdné)
 
 Folders
 -------
-- \amp\app: contains binaries for applications
+- \amp\app: obsahuje binární soubory aplikací 
 - \amp\config: contains custom configurations for the applications
 - \amp\doc: contains CHANGELOG, LICENSE, README
 - \amp\src: contains C# source code for SSWamp.exe
