@@ -2,6 +2,10 @@ Džumlaček (Joomla! Czech) WAMP server New Generation
 ==============
 ![verze](https://img.shields.io/github/release-pre/svatas/dzumlacekNG.svg) ![stažení](https://img.shields.io/github/downloads/svatas/dzumlacekNG/total.svg) 
 
+![repo size](https://img.shields.io/github/languages/code-size/svatas/dzumlacekNG.svg)
+
+
+
 Přenosné běhové prostředí pro Microsoft Windows, které uživatelům přináší platformu pro testování Joomly.
 
 Historie aplikace sahá do roku 2007, kdy se objevila potřeba mít nějaké jednoduché testovací běhové prostředí do Microsoft Windows.
