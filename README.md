@@ -5,8 +5,10 @@ Verze 3.9.1 (vychází z čísla naistalované Joomly)
 
 [![Github all releases](https://img.shields.io/github/downloads/svatas/dzumlacekNG/total.svg)](https://github.com/svatas/dzumlacekNG/releases)
 
+[![Github releases (by release)](https://img.shields.io/github/downloads/svatas/dzumlacekNG/v3.9.1/total.svg)](https://GitHub.com/Naereen/StrapDown.js/releases/)
+
 [![GitHub release](https://img.shields.io/github/release/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/releases/)
-[![GitHub release](https://img.shields.io/github/release/svatas/dzumlacekNG.svg)](https://GitHub.com/svatas/dzumlacekNG/releases/)
+[![GitHub release](https://img.shields.io/github/release/svatas/dzumlacekNG.svg)]  (https://GitHub.com/svatas/dzumlacekNG/releases/)
 
 Přenosné běhové prostředí pro Microsoft Windows, které uživatelům přináší platformu pro testování Joomly.
 
