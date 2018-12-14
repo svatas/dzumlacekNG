@@ -4,7 +4,7 @@ Džumlaček (Joomla! Czech) WAMP server New Generation
 
 ![repo size](https://img.shields.io/github/languages/code-size/svatas/dzumlacekNG.svg?label=Velikost+zdrojového+kódu)
 
-Cockatrice/Cockatrice.svg
+[![HitCount](https://img.shields.io/github/search/svatas/dzumlacekNG.svg?label=Počet+zhlédnutí)
 
 
 Přenosné běhové prostředí pro Microsoft Windows, které uživatelům přináší platformu pro testování Joomly.
