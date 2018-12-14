@@ -50,7 +50,7 @@ Instrukce
 2. Spusťte **dzumlacekNG.exe**
 3. Zatrhněte zatržítko u každého serveru, který chcete spustit
 4. Klikněte na tlačítko **Spustit**
-5. Stiskněte tlačítko Joomla! Frontend pro uživatelskou část Joomly! nebo tlačítko Joomla! Backend pro správcovské rozhraní
+5. Stiskněte tlačítko **Joomla! Frontend** pro uživatelskou část Joomly! nebo tlačítko **Joomla! Backend** pro správcovské rozhraní
 
 Výchozí nastavení MySQL Databáze
 -------------------------------
