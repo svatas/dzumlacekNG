@@ -1,9 +1,5 @@
 Džumlaček (Joomla! Czech) WAMP server New Generation
 ==============
-
-
-Verze 3.9.1 (vychází z čísla naistalované Joomly)
-
 ![verze](https://img.shields.io/github/release-pre/svatas/dzumlacekNG.svg) ![stažení](https://img.shields.io/github/downloads/svatas/dzumlacekNG/total.svg) 
 
 Přenosné běhové prostředí pro Microsoft Windows, které uživatelům přináší platformu pro testování Joomly.
@@ -18,6 +14,8 @@ Současná verze je forkem aplikace [SurfStack Wamp](https://github.com/josephsp
 - existuje speciální spouštěcí aplikace pro snadnou správu běhového prostředí
 
 není nutná žádná instalace, balíček s archivem rozbalte do PC a spusťte aplikaci DžumlačekNG.exe.
+
+Číslo verze Džumlačeku vychází z verze Joomly!, která je v balíčku dostupná.
 
 V tuto chvíli je k dispozici :
 - Apache v2.4.10 (Web Server) (10-20-2014 32-bit VC11)
