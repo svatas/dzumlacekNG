@@ -1,9 +1,14 @@
 Džumlaček (Joomla! Czech) WAMP server New Generation
 ==============
 
+
 Verze 3.9.1 (vychází z čísla naistalované Joomly)
 
-![verze](https://img.shields.io/badge/version-3.9.1-blue.svg?maxAge=2592000)
+![stažení](https://img.shields.io/github/downloads/svatas/dzumlacekNG/total.svg)
+
+![verze](https://img.shields.io/github/release/svatas/dzumlacekNG.svg)
+
+https://img.shields.io/github/release/qubyte/rubidium.svg
 
 https://img.shields.io/github/release/svatas/dzumlacekNG.svg
 
