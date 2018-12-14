@@ -1,6 +1,6 @@
 Džumlaček (Joomla! Czech) WAMP server New Generation
 ==============
-![verze](https://img.shields.io/github/release-pre/svatas/dzumlacekNG.svg?label=Poslední+verze) ![datum](https://img.shields.io/github/release-date-pre/svatas/dzumlacekNG.svg?label=Verze+ze+dne) ![stažení](https://img.shields.io/github/downloads/svatas/dzumlacekNG/total.svg?label=Staženo) ![Licence](https://img.shields.io/github/license/svatas/dzumlacekNG.svg?label=Licence)
+![verze](https://img.shields.io/github/release-pre/svatas/dzumlacekNG.svg?label=Poslední+verze) ![datum](https://img.shields.io/github/release-date-pre/svatas/dzumlacekNG.svg?label=ze+dne) ![stažení](https://img.shields.io/github/downloads/svatas/dzumlacekNG/total.svg?label=Staženo) ![Licence](https://img.shields.io/github/license/svatas/dzumlacekNG.svg?label=Licence)
 
 ![repo size](https://img.shields.io/github/languages/code-size/svatas/dzumlacekNG.svg?label=Velikost+zdrojového+kódu)
 
