@@ -2,8 +2,7 @@ Džumlaček (Joomla! Czech) WAMP server New Generation
 ==============
 
 Verze 3.9.1 (vychází z čísla naistalované Joomly)
-
-[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
+[![GitHub release](https://img.shields.io/github/release/svatas/dzumlacekNG.svg)](https://GitHub.com/svatas/dzumlacekNG/releases/) [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 
 [![Github all releases](https://img.shields.io/github/downloads/svatas/dzumlacekNG/total.svg)](https://github.com/svatas/dzumlacekNG/releases) 
 
