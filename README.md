@@ -1,10 +1,10 @@
 Džumlaček (Joomla! Czech) WAMP server New Generation
 ==============
 [![verze](https://img.shields.io/github/release-pre/svatas/dzumlacekNG.svg?label=Poslední+verze&style=popout)](https://github.com/svatas/dzumlacekNG/releases)
-[![datum](https://img.shields.io/github/release-date-pre/svatas/dzumlacekNG.svg?label=ze+dne)](https://github.com/svatas/dzumlacekNG/releases) 
-[![HitCount](http://hits.dwyl.io/svatas/dzumlacekNG.svg)](https://github.com/svatas/dzumlacekNG) 
+[![datum](https://img.shields.io/github/release-date-pre/svatas/dzumlacekNG.svg?label=ze+dne)](https://github.com/svatas/dzumlacekNG/releases)
+[![HitCount](http://hits.dwyl.io/svatas/dzumlacekNG.svg)](https://github.com/svatas/dzumlacekNG)
 [![stažení](https://img.shields.io/github/downloads/svatas/dzumlacekNG/total.svg?label=Staženo)](https://github.com/svatas/dzumlacekNG/releases)
-[![Licence](https://img.shields.io/github/license/svatas/dzumlacekNG.svg?label=Licence)](https://cs.wikipedia.org/wiki/Apache_Licence) 
+[![Licence](https://img.shields.io/github/license/svatas/dzumlacekNG.svg?label=Licence)](https://cs.wikipedia.org/wiki/Apache_Licence)
 [![repo size](https://img.shields.io/github/languages/code-size/svatas/dzumlacekNG.svg?label=Velikost+zdrojového+kódu)](https://github.com/svatas/dzumlacekNG/releases)
 
 [![podpora](https://img.shields.io/badge/Podporuje-www.joomlaportal.cz-orange.svg)](https://www.joomlaportal.cz)
@@ -29,6 +29,7 @@ V tuto chvíli je k dispozici :
 - MySQL v5.6.21 (Databáze) (09-23-2014 32-bit)
 - PHP TS v5.6.0 (Skriptovací jazyk) (08-28-2014)
 - Adminer v4.1.0 (MySQL Database Manager) (04-18-2014)
+- Joomla! 3.9.1 Content Management System App (11-27-2018)
 
 Na jedno kliknutí jsou k dispozici:
 - Composer (PHP Dependency Manager) (Downloads and installs the latest version)
@@ -44,10 +45,9 @@ PHP rozšíření:
 - Mongo v1.5.6 (MongoDB Driver) (11-11-2014 32-bit)
 - OAuth v1.2.3 (Authorization Bindings) (04-10-2014 32-bit)
 
-Download
+Stažení
 ------------
 Poslední verze [v3.9.1](https://github.com/svatas/dzumlacekNG/releases) (13-12-2018).
-
 
 Instrukce
 ------------
@@ -65,7 +65,7 @@ Výchozí nastavení MySQL Databáze
 
 Folders
 -------
-- \amp\app: obsahuje binární soubory aplikací 
+- \amp\app: obsahuje binární soubory aplikací
 - \amp\config: contains custom configurations for the applications
 - \amp\doc: contains CHANGELOG, LICENSE, README
 - \amp\src: contains C# source code for SSWamp.exe
