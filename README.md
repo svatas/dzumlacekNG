@@ -2,7 +2,7 @@ Džumlaček (Joomla! Czech) WAMP server New Generation
 ==============
 ![verze](https://img.shields.io/github/release-pre/svatas/dzumlacekNG.svg?label=Poslední+verze&style=popout) ![datum](https://img.shields.io/github/release-date-pre/svatas/dzumlacekNG.svg?label=ze+dne) [![HitCount](http://hits.dwyl.io/svatas/dzumlacekNG.svg)](http://hits.dwyl.io/svatas/dzumlacekNG) ![stažení](https://img.shields.io/github/downloads/svatas/dzumlacekNG/total.svg?label=Staženo) ![Licence](https://img.shields.io/github/license/svatas/dzumlacekNG.svg?label=Licence) ![repo size](https://img.shields.io/github/languages/code-size/svatas/dzumlacekNG.svg?label=Velikost+zdrojového+kódu)
 
-![podpora](https://img.shields.io/badge/Podporuje-www.joomlaportal.cz-orange.svg)
+[![podpora](https://img.shields.io/badge/Podporuje-www.joomlaportal.cz-orange.svg)] (https://www.joomlaportal.cz)
 
 Přenosné běhové prostředí pro Microsoft Windows, které uživatelům přináší platformu pro testování Joomly.
 
