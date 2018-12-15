@@ -1,6 +1,11 @@
 Džumlaček (Joomla! Czech) WAMP server New Generation
 ==============
-[![verze](https://img.shields.io/github/release-pre/svatas/dzumlacekNG.svg?label=Poslední+verze&style=popout)](https://github.com/svatas/dzumlacekNG/releases) ![datum](https://img.shields.io/github/release-date-pre/svatas/dzumlacekNG.svg?label=ze+dne) [![HitCount](http://hits.dwyl.io/svatas/dzumlacekNG.svg)](http://hits.dwyl.io/svatas/dzumlacekNG) ![stažení](https://img.shields.io/github/downloads/svatas/dzumlacekNG/total.svg?label=Staženo) ![Licence](https://img.shields.io/github/license/svatas/dzumlacekNG.svg?label=Licence) ![repo size](https://img.shields.io/github/languages/code-size/svatas/dzumlacekNG.svg?label=Velikost+zdrojového+kódu)
+[![verze](https://img.shields.io/github/release-pre/svatas/dzumlacekNG.svg?label=Poslední+verze&style=popout)](https://github.com/svatas/dzumlacekNG/releases)
+[![datum](https://img.shields.io/github/release-date-pre/svatas/dzumlacekNG.svg?label=ze+dne)](https://github.com/svatas/dzumlacekNG/releases) 
+[![HitCount](http://hits.dwyl.io/svatas/dzumlacekNG.svg)](https://github.com/svatas/dzumlacekNG) 
+[![stažení](https://img.shields.io/github/downloads/svatas/dzumlacekNG/total.svg?label=Staženo)](https://github.com/svatas/dzumlacekNG/releases)
+[![Licence](https://img.shields.io/github/license/svatas/dzumlacekNG.svg?label=Licence)](https://cs.wikipedia.org/wiki/Apache_Licence) 
+[![repo size](https://img.shields.io/github/languages/code-size/svatas/dzumlacekNG.svg?label=Velikost+zdrojového+kódu)](https://github.com/svatas/dzumlacekNG/releases)
 
 [![podpora](https://img.shields.io/badge/Podporuje-www.joomlaportal.cz-orange.svg)](https://www.joomlaportal.cz)
 
