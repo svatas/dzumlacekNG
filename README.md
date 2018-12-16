@@ -28,22 +28,22 @@ V tuto chvíli je k dispozici :
 - Apache v2.4.10 (Web Server) (10-20-2014 32-bit VC11)
 - MySQL v5.6.21 (Databáze) (09-23-2014 32-bit)
 - PHP TS v5.6.0 (Skriptovací jazyk) (08-28-2014)
-- Adminer v4.1.0 (MySQL Database Manager) (04-18-2014)
-- Joomla! 3.9.1 Content Management System App (11-27-2018)
+- Adminer v4.1.0 (Správce databáze MySQL) (04-18-2014)
+- Joomla! 3.9.1 (Redakční systém alis Content Management) (11-27-2018)
 
 Na jedno kliknutí jsou k dispozici:
-- Composer (PHP Dependency Manager) (Downloads and installs the latest version)
-- PHPUnit (PHP Test Framework) (Downloads and installs the latest version)
-- PEAR (PHP Extension and Application Repository) (Downloads and installs the latest version)
-- phpDocumentor (PHP Documentation Generator) (Downloads and installs the latest version)
+- Composer (Správce PHP závislostí) (Downloads and installs the latest version)
+- PHPUnit (PHP Testovací Framework) (Downloads and installs the latest version)
+- PEAR (Repozitář PHP rozšíření a aplikací) (Downloads and installs the latest version)
+- phpDocumentor (Generátor PHP dokumentace) (Downloads and installs the latest version)
 - phpdbg (PHP Debugger) (Command prompt)
-- Phalcon Tools (Command Line Utility) (Command prompt)
+- Phalcon Tools (Utilita do příkazové řádky) (Command prompt)
 
 PHP rozšíření:
 - Phalcon v1.3.4 (High Performance PHP Framework) (10-29-2014 32-bit)
-- Xdebug v2.2.6 (Debugger and Profiler) (11-15-2014 32-bit)
-- Mongo v1.5.6 (MongoDB Driver) (11-11-2014 32-bit)
-- OAuth v1.2.3 (Authorization Bindings) (04-10-2014 32-bit)
+- Xdebug v2.2.6 (Debugger a Profiler) (11-15-2014 32-bit)
+- Mongo v1.5.6 (Ovladač MongoDB) (11-11-2014 32-bit)
+- OAuth v1.2.3 (Autorizační rozšíření) (04-10-2014 32-bit)
 
 Stažení
 ------------
@@ -61,37 +61,28 @@ Výchozí nastavení MySQL Databáze
 -------------------------------
 - Jméno databáze: DNG
 - Uživatelské jméno: root
-- Password: (prázdné)
+- Heslo: (prázdné)
 
-Folders
+Složky
 -------
 - \amp\app: obsahuje binární soubory aplikací
-- \amp\config: contains custom configurations for the applications
-- \amp\doc: contains CHANGELOG, LICENSE, README
-- \amp\src: contains C# source code for SSWamp.exe
-- \webroot\localhost\public: default location for all web files
+- \amp\config: obsahuje upravené konfigurační soubory aplikací
+- \amp\doc: obsahuje CHANGELOG, LICENSE, README
+- \amp\src: obsahuje C# zdrojový kód pro apikaci DzumlacekNG.exe
+- \webroot\localhost\public: výchozí složka pro instalaci Joomly!
 
-Notes
+Poznámky
 -----
-- MySQL binaries are unmodified, but exclude files to make the distribution smaller
-- Nginx binaries are unmodified
-- PHP binaries are unmodified, but exclude files to make the distribution smaller
-- Apache binaries are unmodified, but exclude files to make the distribution smaller
+- Binární soubory MySQL jsou nezměněné, můžete odstranit nepoužívané soubory a distribučná soubor bude menší
+- Binární soubory PHP jsou nezměněné, můžete odstranit nepoužívané soubory a distribučná soubor bude menší
+- Binární soubory Apache jsou nezměněné, můžete odstranit nepoužívané soubory a distribučná soubor bude menší
 
-Compatibility
+Kompatibilita
 -------------
-- The \amp\app folder holds official binaries so the contents of each folder
-can be replaced with binaries downloaded from original vendor (PHP extensions
-must be updated as well to match the config)
-- The \amp\config folder holds custom configurations for the applications
-- Each configuration has variables which are replaced by values provided by
-SSWamp.exe
-- Any changes made to the configurations will apply the next time MySQL, Nginx,
-PHP, Apache are started
-
-Technical Notes
----------------
-- Nginx uses a highly dynamic configuration which supports multiple websites
+- Složka \amp\app obsahuje oficiální binární soubory aplikací, proto je můžete kdykoliv nahradit originálními soubory vyšší verze přímo od dodavatele (PHP rozšíření musíte také aktualizovat)
+- Složka \amp\config obsahuje upravené konfigurace aplikací
+- Každý konfigurační soubor obsahuje proměnné, které budpou nahrazeny hodnotami dodanými programem DzumlacekNG.exe
+- Jakékoliv změny v konfiguracích budou aplikovány při dalším spuštění MySQL, PHP nebo Apache.
 
 Website Simulation
 ------------------
