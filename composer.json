@@ -1,15 +1,15 @@
 {
-   "name": "josephspurrier/surfstack-wamp",
-    "description": "Preinstalled Windows package with Apache, Nginx, MySQL, MongoDB, PHP, and Memcached",
+   "name": "svatas/dzumlacekNG",
+    "description": "Preinstalled Windows package with Apache,PHP 7 and MySQL for projecting Joomla! sites",
     "keywords": ["WAMP"],
-    "homepage": "https://github.com/josephspurrier/surfstack-wamp",
+    "homepage": "https://github.com/svatas/dzumlacekNG",
     "type": "library",
     "license": "Apache-2.0",
     "authors": [
         {
-            "name": "Joseph Spurrier",
-            "homepage": "http://josephspurrier.com"
+            "name": "Svatopluk Vít and Joseph Spurrier",
+            "homepage": "http://www.joomlaportal.cz"
         }
     ],
-    "version": "2.1.0"
+    "version": "3.9.1"
 }
