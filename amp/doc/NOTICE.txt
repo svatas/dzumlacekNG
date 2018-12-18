@@ -1,8 +1,14 @@
+DzumlacekNG
+Copyright 2018 Svatopluk Vít
+
+This product includes software developed by
+Svatopluk Vít for http://www.joomlaportal.cz.
+
 SurfStack
 Copyright 2014 Joseph Spurrier
 
 This product includes software developed by
-the Joseph Spurrier (http://www.josephspurrier.com).
+Joseph Spurrier (http://www.josephspurrier.com).
 
 This product includes software developed by
 the Oracle Corporation (http://www.mysql.com).

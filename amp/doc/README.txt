@@ -1,4 +1,4 @@
-Thanks for downloading SurfStack!
+Thanks for downloading DzumlacekNG!
 
 The most current download can be found:
-* https://github.com/josephspurrier
+* https://github.com/svatas/dzumlacekNG

@@ -11,7 +11,7 @@ using System.Collections;
 using System.IO;
 using System.Windows.Forms;
 
-namespace SSWamp
+namespace DzumlacekNG
 {
 	/// <summary>
 	/// Description of frmPHP.

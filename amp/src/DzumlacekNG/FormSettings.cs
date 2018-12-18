@@ -3,14 +3,14 @@
  * User: Coil
  * Date: 8/25/2013
  * Time: 1:32 PM
- * 
+ *
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
 using System;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace SSWamp
+namespace DzumlacekNG
 {
 	/// <summary>
 	/// Description of frmSettings.
@@ -18,23 +18,23 @@ namespace SSWamp
 	public partial class FormSettings : Form
 	{
 		Variables var;
-		
+
 		public FormSettings(Variables v, bool enable)
 		{
 			//
 			// The InitializeComponent() call is required for Windows Forms designer support.
 			//
 			InitializeComponent();
-			
+
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
-			
+
 			var = v;
 			handleAll(enable);
 			txtServerRoot.Text = var.strApacheFolderPath;
 		}
-		
+
 		void handleAll(bool blValue)
 		{
 			foreach (Control y in tabController.Controls)
@@ -47,11 +47,11 @@ namespace SSWamp
 					}
 				}
 			}
-			
+
 			btnSave.Enabled = blValue;
 			btnRestoreDefaults.Enabled = blValue;
 		}
-		
+
 		void BtnSaveClick(object sender, EventArgs e)
 		{
 			foreach (Control y in tabController.Controls)
@@ -64,16 +64,16 @@ namespace SSWamp
 					}
 				}
 			}
-			
+
 			this.Close();
 		}
-		
+
 		void FormSettingsLoad(object sender, EventArgs e)
 		{
 			if (!var.isConfigurationReady()) return;
 			reload();
 		}
-		
+
 		void reload()
 		{
 			foreach (Control y in tabController.Controls)
@@ -87,7 +87,7 @@ namespace SSWamp
 				}
 			}
 		}
-		
+
 		void BtnRestoreDefaultsClick(object sender, EventArgs e)
 		{
 			var.resetDefaults();

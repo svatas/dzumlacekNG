@@ -204,7 +204,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
 
-namespace SSWamp
+namespace DzumlacekNG
 {
 	/// <summary>
 	/// Description of MainForm.
@@ -215,18 +215,18 @@ namespace SSWamp
 		string strRootFolderPath;
 		List<MonitoredProcess> listMP;
 		Variables var;
-		
+
 		// Strings
 		static string strStart = "Spustit";
 		static string strStop = "Vypnout";
-		
+
 		public MainForm()
 		{
 			//
 			// The InitializeComponent() call is required for Windows Forms designer support.
 			//
 			InitializeComponent();
-			
+
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
@@ -234,14 +234,14 @@ namespace SSWamp
 
 		private void MainForm_Resize(object sender, EventArgs e)
 		{
-		     notifyIcon1.BalloonTipTitle = "Minimized";
-		     notifyIcon1.BalloonTipText = "Můžete Džumlaček NG obnovit ze systémové lišty.";
+		     notifyIcon1.BalloonTipTitle = "Minimalizováno";
+		     notifyIcon1.BalloonTipText = "Můžete DžumlačekNG obnovit ze systémové lišty.";
 
 		     if (FormWindowState.Minimized == this.WindowState)
 		     {
 		          notifyIcon1.Visible = true;
 		          // notifyIcon1.ShowBalloonTip(200);
-		          this.Hide();    
+		          this.Hide();
 		     }
 		     else if (FormWindowState.Normal == this.WindowState)
 		     {
@@ -254,21 +254,21 @@ namespace SSWamp
 		     this.Show();
 		     this.WindowState = FormWindowState.Normal;
 		}
-		
+
 		private void MainFormLoad(object sender, EventArgs e)
 		{
 			// Set the environment paths
             // This is just used so the developer can specify the root path without moving the compiled EXE every time
             strRootFolderPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop)+@"\Now\nothing";
             if (!Directory.Exists(strRootFolderPath)) strRootFolderPath = Directory.GetCurrentDirectory();
-            
+
             versionToolStripMenuItem.Text = "Verze: " + System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
-            
+
 			// Modify the status icons
 			GraphicsPath path = new GraphicsPath();
 			path.AddEllipse(0, 0, 13, 13);
 			Region reg = new Region(path);
-			
+
 			foreach (Control x in gbStatus.Controls)
 			{
 				if (x is Label && x.Name.StartsWith("c"))
@@ -281,47 +281,47 @@ namespace SSWamp
 					((CheckBox)x).CheckedChanged += StatusCheckedChanged;
 				}
 			}
-			
+
 			//cWebserver.Region = reg;
 			//cMySQL.Region = reg;
 			//cCache.Region = reg;
 			//cWebserver.BackColor = Variables.cGray;
 			//cMySQL.BackColor = Variables.cGray;
 			//cCache.BackColor = Variables.cGray;
-			
+
             // Load all the variables and restore form state
             var = new Variables(strRootFolderPath);
             var.loadControls(gbStatus);
-            
+
             listMP = new List<MonitoredProcess>();
 		}
-		
+
 		private void BtnStartStopClick(object sender, EventArgs e)
 		{
 			btnStartStop.Enabled = false;
-			
+
 			if (btnStartStop.Text == strStart) start();
 			else stop();
-			
+
 			btnStartStop.Enabled = true;
 		}
-		
+
 		private void stop()
 		{
 			killAll();
 			btnStartStop.Text = strStart;
         	gbStatus.Enabled = true;
 		}
-		
+
 		private void start()
 		{
 			if (!var.isConfigurationReady()) return;
 			var.saveControls(gbStatus);
-			
+
 			// Prepare PHP for use with Nginx and Apache
             PHPConfig php = new PHPConfig(var);
             if (!php.isPHPReady()) return;
-            
+
 
         	if (cbApache.Checked)
         	{
@@ -331,9 +331,9 @@ namespace SSWamp
 				mp.start();
 				listMP.Add(mp);
         	}
-        	
 
-            
+
+
             if (cbMySQL.Checked)
             {
 	            MPMySQL mp = new MPMySQL();
@@ -342,49 +342,49 @@ namespace SSWamp
 				mp.start();
 				listMP.Add(mp);
             }
-            
-            
-            
+
+
+
             if (listMP.Count>0)
             {
             	btnStartStop.Text = strStop;
             	gbStatus.Enabled = false;
             }
 		}
-		
+
 		private Label getColorLabel(object cbObject)
 		{
 			CheckBox cb = (CheckBox)cbObject;
 			string strColor = cb.Name.Remove(1,1);
         	return ((Label)this.Controls.Find(strColor,true)[0]);
 		}
-		
+
 		private void SettingsToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			FormSettings frmSet = new FormSettings(var, (listMP.Count==0));
 			frmSet.ShowDialog();
 		}
-		
+
 		private void BtnExitClick(object sender, EventArgs e)
 		{
 			this.Close();
 		}
-		
+
 		private void btnFrontend(object sender, EventArgs e)
 		{
 			simpleOpen("http://localhost");
 		}
-		
+
 		private void BtnBrowseHTTPSClick(object sender, EventArgs e)
 		{
 			simpleOpen("https://localhost");
 		}
-		
+
         private void simpleOpen(string strProcess)
         {
         	simpleOpen(strProcess, "");
         }
-        
+
         private void simpleOpen(string strProcess, string strArgs)
         {
         	try
@@ -393,7 +393,7 @@ namespace SSWamp
         		{
         			if (!File.Exists(strArgs))
         			    {
-        			    	MessageBox.Show("Notepad cannot find: " + strArgs,"File Missing");
+        			    	MessageBox.Show("Notepad nemůže najít: " + strArgs,"Soubor chybí");
         			    	return;
         			    }
         		}
@@ -404,15 +404,15 @@ namespace SSWamp
         		MessageBox.Show("Cannot find: " + strProcess + " " + strArgs,"File/Folder Missing");
         	}
         }
-		
+
         private void StatusCheckedChanged(object sender, EventArgs e)
         {
         	CheckBox cb = ((CheckBox)sender);
         	Label l = getColorLabel(cb);
         	if (cb.Checked) l.BackColor = Variables.cRed;
-        	else l.BackColor = Variables.cGray;        		
+        	else l.BackColor = Variables.cGray;
         }
-        
+
 		private void MainFormFormClosing(object sender, FormClosingEventArgs e)
 		{
 			// If a user is closing the form, ensure the user has shutdown the apps
@@ -431,27 +431,27 @@ namespace SSWamp
         	{
         		killAll();
         	}
-        	
+
         	if (e.Cancel==true)
         	{
         		MessageBox.Show("Před ukončením prosím vypněte všechny servery.","Běžící servery MySQL a Apache");
         	}
 		}
-		
+
 		private void forceKill()
 		{
 			// Tell all the applications not to restart
 			killAll();
-			
+
 			// Kill the applications without respawning
-			
+
 			Process.Start("taskkill", "/F /IM httpd.exe");
 			Process.Start("taskkill", "/F /IM php-cgi.exe");
 			Process.Start("taskkill", "/F /IM mysqld.exe");
-			
-			
+
+
 		}
-		
+
 		private void killAll()
 		{
 			for (int i = listMP.Count-1; i >= 0; i--)
@@ -460,116 +460,116 @@ namespace SSWamp
 				listMP.RemoveAt(i);
 			}
 		}
-		
+
 		private void MySQLToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			simpleOpen("notepad", var.strMySQLTemplateConfigFilePath);
 		}
-		
+
 		private void MySQLToolStripMenuItem1Click(object sender, EventArgs e)
 		{
 			simpleOpen("notepad", var.strMySQLConfigFilePath);
 		}
-		
+
 		private void MySQLToolStripMenuItem2Click(object sender, EventArgs e)
 		{
 			simpleOpen(var.strMySQLFolderPath);
 		}
-		
+
 		private void PHPTSApacheToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			simpleOpen("notepad", var.strPHPTemplateConfigFilePath);
 		}
-		
+
 		private void PHPTSApacheToolStripMenuItem1Click(object sender, EventArgs e)
 		{
 			simpleOpen("notepad", var.strPHPTSConfigFilePath);
 		}
-		
+
 		private void PHPTSApacheToolStripMenuItem2Click(object sender, EventArgs e)
 		{
 			simpleOpen(var.strPHPTSFolderPath);
 		}
-		
+
 		private void PHPNTSNginxToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			simpleOpen("notepad", var.strPHPTemplateConfigFilePath);
 		}
-		
+
 		private void PHPNTSNginxToolStripMenuItem1Click(object sender, EventArgs e)
 		{
 			simpleOpen("notepad", var.strPHPNTSConfigFilePath);
 		}
-		
+
 		private void PHPNTSNginxToolStripMenuItem2Click(object sender, EventArgs e)
 		{
 			simpleOpen(var.strPHPNTSFolderPath);
 		}
-		
+
 		private void ApacheToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			simpleOpen("notepad", var.strApacheTemplateConfigFilePath);
 		}
-		
+
 		private void ApacheToolStripMenuItem1Click(object sender, EventArgs e)
 		{
 			simpleOpen("notepad", var.strApacheConfigFilePath);
 		}
-		
+
 		private void ApacheToolStripMenuItem2Click(object sender, EventArgs e)
 		{
 			simpleOpen(var.strApacheFolderPath);
 		}
-		
-		
-		
-		
+
+
+
+
 		private void CopyrightToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			simpleOpen(@"http://www.joomlaportal.cz");
 		}
-		
+
 		private void LicensedUnderToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			simpleOpen(@"http://www.apache.org/licenses/LICENSE-2.0.html");
 		}
-		
+
 		private void SurfStackWebsiteToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			simpleOpen(@"https://github.com/svatas/dzumlacekNG");
 		}
-		
-			
+
+
 		private void WebRootPublicToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			simpleOpen(var.strLocalhostPublicFolderPath);
 		}
-		
+
 		private void AppConfigurationsToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			simpleOpen(var.strConfigFolderPath);
 		}
-		
+
 		private void DocumentsToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			simpleOpen(var.strDocsFolderPath);
 		}
-		
+
 		private void SessionsToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			simpleOpen(System.IO.Path.GetTempPath());
 		}
-		
+
 		private void WebPrivateToolStripMenuItemClick(object sender, EventArgs e)
 		{
             simpleOpen(var.strLocalhostFolderPath);
 		}
-		
+
 		private void PHPLogToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			simpleOpen(var.strLogFolderPath);
 		}
-		
+
         private void cmdOpen(string strScript)
         {
         	try
@@ -586,7 +586,7 @@ namespace SSWamp
         		MessageBox.Show("Cannot find: " + strScript,"File Missing");
         	}
         }
-		
+
         private string convertGlobals(string strContent)
         {
         	strContent = strContent.Replace("#APPDIR#", var.strAppFolderPath);
@@ -594,58 +594,58 @@ namespace SSWamp
 			strContent = strContent.Replace("#LOCALHOSTDIR#", var.strLocalhostFolderPath);
 			strContent = strContent.Replace("#SCRIPTDIR#", var.strScriptsFolderPath);
 			strContent = strContent.Replace("#WAMPDIR#", var.strRootFolderPath);
-			
+
 			return strContent;
         }
-        
+
 		private void InstallComposerToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			string strScript = Path.Combine(var.strScriptsFolderPath, "ComposerSetup.script");
 			string strBatch = Path.Combine(var.strScriptsFolderPath, "ComposerSetup.cmd");
 			string strContent = File.ReadAllText(strScript);
-			
+
 			strContent = convertGlobals(strContent);
-			
+
 			File.WriteAllText(strBatch, strContent);
 			cmdOpen(strBatch);
 		}
-		
+
 		private void InstallDependenciesToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			string strScript = Path.Combine(var.strScriptsFolderPath, "ComposerDepInstall.script");
 			string strBatch = Path.Combine(var.strScriptsFolderPath, "ComposerDepInstall.cmd");
 			string strContent = File.ReadAllText(strScript);
-			
+
 			strContent = convertGlobals(strContent);
-			
+
 			File.WriteAllText(strBatch, strContent);
 			cmdOpen(strBatch);
 		}
-		
+
 		private void UpdateDependenciesToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			string strScript = Path.Combine(var.strScriptsFolderPath, "ComposerDepUpdate.script");
 			string strBatch = Path.Combine(var.strScriptsFolderPath, "ComposerDepUpdate.cmd");
 			string strContent = File.ReadAllText(strScript);
-			
+
 			strContent = convertGlobals(strContent);
-			
+
 			File.WriteAllText(strBatch, strContent);
 			cmdOpen(strBatch);
 		}
-		
+
 		private void CommandPromptToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			string strScript = Path.Combine(var.strScriptsFolderPath, "ComposerCMD.script");
 			string strBatch = Path.Combine(var.strScriptsFolderPath, "ComposerCMD.cmd");
 			string strContent = File.ReadAllText(strScript);
-			
+
 			strContent = convertGlobals(strContent);
-			
+
 			File.WriteAllText(strBatch, strContent);
 			cmdOpen(strBatch);
 		}
-		
+
 		private void RemoveBatchFilesToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			foreach(string file in Directory.GetFiles(var.strScriptsFolderPath))
@@ -655,51 +655,51 @@ namespace SSWamp
 					File.Delete(file);
 				}
 			}
-			
+
 			MessageBox.Show("Removed batch files");
 		}
-		
+
 		private void ViewScriptFilesToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			simpleOpen(var.strScriptsFolderPath);
 		}
-		
+
 		private void PHPUnitCommandPromptToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			string strScript = Path.Combine(var.strScriptsFolderPath, "PHPUnitCMD.script");
 			string strBatch = Path.Combine(var.strScriptsFolderPath, "PHPUnitCMD.cmd");
 			string strContent = File.ReadAllText(strScript);
-			
+
 			strContent = convertGlobals(strContent);
-			
+
 			File.WriteAllText(strBatch, strContent);
 			cmdOpen(strBatch);
 		}
-		
+
 		private void InitialPHPUnitSetupToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			string strScript = Path.Combine(var.strScriptsFolderPath, "PHPUnitSetup.script");
 			string strBatch = Path.Combine(var.strScriptsFolderPath, "PHPUnitSetup.cmd");
 			string strContent = File.ReadAllText(strScript);
-			
+
 			strContent = convertGlobals(strContent);
-			
+
 			File.WriteAllText(strBatch, strContent);
 			cmdOpen(strBatch);
 		}
-		
+
 		private void GenerateCertificateToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			string strScript = Path.Combine(var.strScriptsFolderPath, "SSLGenerate.script");
 			string strBatch = Path.Combine(var.strScriptsFolderPath, "SSLGenerate.cmd");
 			string strContent = File.ReadAllText(strScript);
-			
+
 			strContent = convertGlobals(strContent);
-			
+
 			File.WriteAllText(strBatch, strContent);
 			cmdOpen(strBatch);
 		}
-		
+
 		private void DeleteCertificateToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			foreach(string file in Directory.GetFiles(Path.Combine(var.strConfigFolderPath, "ssl")))
@@ -714,34 +714,34 @@ namespace SSWamp
 					File.Delete(file);
 				}
 			}
-			
+
 			MessageBox.Show("Removed cert files");
 		}
-		
+
 		private void InitialPearSetupToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			string strScript = Path.Combine(var.strScriptsFolderPath, "PEARSetup.script");
 			string strBatch = Path.Combine(var.strScriptsFolderPath, "PEARSetup.cmd");
 			string strContent = File.ReadAllText(strScript);
-			
+
 			strContent = convertGlobals(strContent);
-			
+
 			File.WriteAllText(strBatch, strContent);
 			cmdOpen(strBatch);
 		}
-		
+
 		private void CommandPromptPearToolStripMenuItem1Click(object sender, EventArgs e)
 		{
 			string strScript = Path.Combine(var.strScriptsFolderPath, "PEARCMD.script");
 			string strBatch = Path.Combine(var.strScriptsFolderPath, "PEARCMD.cmd");
 			string strContent = File.ReadAllText(strScript);
-			
+
 			strContent = convertGlobals(strContent);
-			
+
 			File.WriteAllText(strBatch, strContent);
 			cmdOpen(strBatch);
 		}
-		
+
 		private void deleteFiles(string[] strFiles, string strPath)
 		{
 			foreach (string file in strFiles)
@@ -752,7 +752,7 @@ namespace SSWamp
 				}
 			}
 		}
-		
+
 		private void deleteFolders(string[] strDirs, string strPath)
 		{
 			foreach (string dir in strDirs)
@@ -763,7 +763,7 @@ namespace SSWamp
 				}
 			}
 		}
-		
+
 		private void UninstallPearToolStripMenuItemClick(object sender, EventArgs e)
 		{
 				string[] strDirs = new string[] {
@@ -775,80 +775,80 @@ namespace SSWamp
 					"tmp",
 					"www"
 				};
-				
+
 				deleteFolders(strDirs, var.strPHPTSFolderPath);
-				
+
 				string[] strFiles = new String[] {
 					"go-pear.phar",
 					"pear.bat",
 					"peardev.bat",
 					"pecl.bat",
 				};
-				
+
 				deleteFiles(strFiles, var.strPHPTSFolderPath);
-			
+
 			MessageBox.Show("Deleted PEAR");
 		}
-		
+
 		private void UninstallPHPUnitToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			string[] strFiles = new String[] {
 				"phpunit.phar"
 			};
-				
+
 			deleteFiles(strFiles, var.strPHPTSFolderPath);
-			
+
 			MessageBox.Show("Deleted PHPUnit");
 		}
-		
+
 		private void UninstallComposerToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			string[] strFiles = new String[] {
 				"composer.phar",
 				"composer.bat"
 			};
-				
+
 			deleteFiles(strFiles, var.strPHPTSFolderPath);
-			
+
 			MessageBox.Show("Deleted Composer");
 		}
-		
+
 		private void InitialSetupPHPDocumentorToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			string strScript = Path.Combine(var.strScriptsFolderPath, "PHPDocumentorSetup.script");
 			string strBatch = Path.Combine(var.strScriptsFolderPath, "PHPDocumentorSetup.cmd");
 			string strContent = File.ReadAllText(strScript);
-			
+
 			strContent = convertGlobals(strContent);
-			
+
 			File.WriteAllText(strBatch, strContent);
 			cmdOpen(strBatch);
 		}
-		
+
 		private void CommandPromptPhpDocumentorToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			string strScript = Path.Combine(var.strScriptsFolderPath, "PHPDocumentorCMD.script");
 			string strBatch = Path.Combine(var.strScriptsFolderPath, "PHPDocumentorCMD.cmd");
 			string strContent = File.ReadAllText(strScript);
-			
+
 			strContent = convertGlobals(strContent);
-			
+
 			File.WriteAllText(strBatch, strContent);
 			cmdOpen(strBatch);
 		}
-		
+
 		private void ForceKillApplicationsToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			forceKill();
-			
+
 			MessageBox.Show("All applications forcefully terminated");
 		}
-		
+
 		private void EditComposerjsonToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			simpleOpen("notepad", var.strComposerFilePath);
 		}
-		
+
 		private void EditPhpunitxmldistToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			simpleOpen("notepad", var.strPHPUnitFilePath);
@@ -858,9 +858,9 @@ namespace SSWamp
 			string strScript = Path.Combine(var.strScriptsFolderPath, "PHPDBGCMD.script");
 			string strBatch = Path.Combine(var.strScriptsFolderPath, "PHPDBGCMD.cmd");
 			string strContent = File.ReadAllText(strScript);
-			
+
 			strContent = convertGlobals(strContent);
-			
+
 			File.WriteAllText(strBatch, strContent);
 			cmdOpen(strBatch);
 		}
@@ -869,9 +869,9 @@ namespace SSWamp
 			string strScript = Path.Combine(var.strScriptsFolderPath, "PhalconCMD.script");
 			string strBatch = Path.Combine(var.strScriptsFolderPath, "PhalconCMD.cmd");
 			string strContent = File.ReadAllText(strScript);
-			
+
 			strContent = convertGlobals(strContent);
-			
+
 			File.WriteAllText(strBatch, strContent);
 			cmdOpen(strBatch);
 		}
@@ -884,7 +884,7 @@ namespace SSWamp
         private void btnJoomlaFrontend_Click(object sender, EventArgs e)
         {
             simpleOpen("http://localhost");
-            
+
         }
 
         private void btnJoomlaBackend_Click(object sender, EventArgs e)

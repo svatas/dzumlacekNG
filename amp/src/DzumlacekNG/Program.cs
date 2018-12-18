@@ -3,13 +3,13 @@
  * User: Coil
  * Date: 8/25/2013
  * Time: 12:22 PM
- * 
+ *
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
 using System;
 using System.Windows.Forms;
 
-namespace SSWamp
+namespace DzumlacekNG
 {
 	/// <summary>
 	/// Class with program entry point.
@@ -26,6 +26,6 @@ namespace SSWamp
 			Application.SetCompatibleTextRenderingDefault(false);
 			Application.Run(new MainForm());
 		}
-		
+
 	}
 }

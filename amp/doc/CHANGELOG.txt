@@ -1,3 +1,13 @@
+Džumlaček NG v3.9.1 (2018-12-18)
+--------------------------------
+* Complete rebranding from SurfStack WAMP
+* Translated to Czech language
+* Reworked GUI of DzumlacekNG.exe
+* Equipped with Joomla! 3.9.1
+* Updated to PHP TS 7.3.0
+* Updated to ssleay32.dll 1.0.2q
+* Updated to libeay32.dll 1.0.2q
+
 SurfStack WAMP v2.2.0 (2016-01-31)
 ----------------------------------
 * Updated SSWamp.exe to minimize to system tray (Boycce)

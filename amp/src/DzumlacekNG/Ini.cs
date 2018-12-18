@@ -3,7 +3,7 @@
  * User: Coil
  * Date: 8/25/2013
  * Time: 3:45 PM
- * 
+ *
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
 using System;
@@ -12,7 +12,7 @@ using System.Text;
 
 // Source: http://www.codeproject.com/Articles/1966/An-INI-file-handling-class-using-C
 
-namespace SSWamp
+namespace DzumlacekNG
 {
 	/// <summary>
 	/// Create a New INI file to store or load data
@@ -50,7 +50,7 @@ namespace SSWamp
         {
             WritePrivateProfileString(Section,Key,Value,this.path);
         }
-        
+
         /// <summary>
         /// Read Data Value From the Ini File
         /// </summary>
@@ -61,7 +61,7 @@ namespace SSWamp
         public string IniReadValue(string Section,string Key)
         {
             StringBuilder temp = new StringBuilder(255);
-            int i = GetPrivateProfileString(Section,Key,"",temp, 
+            int i = GetPrivateProfileString(Section,Key,"",temp,
                                             255, this.path);
             return temp.ToString();
 
