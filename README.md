@@ -25,11 +25,11 @@ Není nutná žádná instalace, balíček s archivem rozbalte do PC a spusťte 
 Číslo verze Džumlačeku vychází z verze Joomly!, která je v balíčku dostupná.
 
 V tuto chvíli je k dispozici :
-- Apache v2.4.10 (Web Server) (10-20-2014 32-bit VC11)
-- MySQL v5.6.21 (Databáze) (09-23-2014 32-bit)
-- PHP TS v5.6.0 (Skriptovací jazyk) (08-28-2014)
-- Adminer v4.1.0 (Správce databáze MySQL) (04-18-2014)
-- Joomla! 3.9.1 (Redakční systém alis Content Management) (11-27-2018)
+- Apache v2.4.10 (Web Server) (20.10.2014 32-bit VC11)
+- MySQL v5.6.21 (Databáze) (23.9.2014 32-bit)
+- PHP TS v7.3.0 (Skriptovací jazyk) (6.12.2018)
+- Adminer v4.1.0 (Správce databáze MySQL) (18.4.2014)
+- Joomla! 3.9.1 (Redakční systém alis Content Management) (27.11.2018)
 
 Na jedno kliknutí jsou k dispozici:
 - Composer (Správce PHP závislostí) (Downloads and installs the latest version)
@@ -84,26 +84,24 @@ Kompatibilita
 - Každý konfigurační soubor obsahuje proměnné, které budpou nahrazeny hodnotami dodanými programem DzumlacekNG.exe
 - Jakékoliv změny v konfiguracích budou aplikovány při dalším spuštění MySQL, PHP nebo Apache.
 
-Website Simulation
+Simulování domény webové stránky
 ------------------
-To resolve any domain like www.example.com on your local system, add the domain
-name to your system hosts file:
+Abyste mohli "nastavit" libovolnou dpm=nu ve vašem lokálním systému (např. www.example.com), přidejte doménové jméno do vaše souboru hosts:
 
-1. Copy C:\windows\system32\drivers\etc\hosts to your desktop
-2. Open the hosts file in Notepad
-3. Add the following lines to the bottom of the hosts file:
-4. 127.0.0.1  example.com
-5. 127.0.0.1  www.example.com
-6. Save the modified hosts file
-7. Copy the modified hosts file back to: C:\windows\system32\drivers\etc\hosts
-8. Close your web browser if open
-9. Run SSWamp.exe
-10. Place a check next to the Apache option
-11. Click Turn On
-12. Test the configuration by opening your web browser to: http://example.com
+1. Zkopírujte soubor C:\windows\system32\drivers\etc\hosts na plochu
+2. Tento soubor otevřete v editoru (třeba Notepad nebo jiném)
+3. Do souboru hosts přidejte následující řádky:
+- 127.0.0.1  example.com
+- 127.0.0.1  www.example.com
+4. Uložte upravený soubor
+5. Upravený soubor zkopírujte zpět do složky C:\windows\system32\drivers\etc\hosts
+6. Uzavřete všechna okna internetového prohlížeče, která máte otevřená
+7. Spusťte aplikaci DzumlacekNG.exe
+8. Zatrhněte zatržítko u volby Apache
+9. Klikněte na tlačítko Spustit
+10. Otestujte nastavení zadáním http://example.com do adresního řádku internetového prohlížeče.
 
-Quick Solutions
+Tipy
 ---------------
-- Unblock all files on Windows Vista or Windows 7 if prompted
-- Allow Apache, Nginx, MySQL, MongoDB, Memcached, and SSWamp.exe through the
-firewall if prompted
+- Pokud jste na to dotázání ve Windows Vista nebo Windows 7, odblokujte všechny soubory
+- Zapněte povolení aplikací Apache, MySQL, a DzumlacekNG.exe na integrovaném Windows firewallu, pokud jste dotázáni
